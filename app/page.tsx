@@ -7,11 +7,8 @@ import SlideUp from "@/component/Slideup";
 import InstagramIcon from "@/component/icons/Instagram";
 import GithubIcon from "@/component/icons/Github";
 import LinkedinIcon from "@/component/icons/Linkedin";
-import FigmaIcon from "@/component/icons/Figma";
 import GmailIcon from "@/component/icons/Gmail";
 import Stack from "@/component/icons/Teckstack";
-
-import UniBLogo from "@/component/projects/uniblogo";
 
 export default function Home() {
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -146,9 +143,6 @@ export default function Home() {
                           </div>
                           <div className="h-20 w-20 rounded-[20px] shadow-[-5px_5px_5px_rgba(0,0,0,0.3)] hover:shadow-[-10px_8px_5px_rgba(0,0,0,0.3)] hover:scale-107 transition-all duration-200">
                               <LinkedinIcon className="w-full h-full" />
-                          </div>
-                          <div className="h-20 w-20 bg-black rounded-[20px] shadow-[-5px_5px_5px_rgba(0,0,0,0.3)] hover:shadow-[-10px_8px_5px_rgba(0,0,0,0.3)] hover:scale-107 transition-all duration-200 p-5">
-                              <FigmaIcon className="w-full h-full " />
                           </div>
                           <div className="h-20 w-20 rounded-[20px] shadow-[-5px_5px_5px_rgba(0,0,0,0.3)] hover:shadow-[-10px_8px_5px_rgba(0,0,0,0.3)] hover:scale-107 transition-all duration-200">
                               <GmailIcon className="w-full h-full " />
@@ -330,44 +324,91 @@ export default function Home() {
               <img src="designs/unib1.svg" alt="noimg" className="h-250"/>
             </div>
 
-            <div className="flex flex-col justify-center items-center w-[50%] pb-40">
+            <div className="flex flex-col justify-center items-start w-[50%] pb-40 gap-5">
               <div className="text-left w-auto text-[#333333] tracking-normal">
                 <div className="pb-5">
                   <span className="text-lg font-medium">Design Project</span>
-                  <div className="font-bold text-5xl">
+                  <div className="font-bold text-5xl pb-2">
                     UniBudget
+                  </div>
+                  <div className="flex text-sm gap-2 border-[#333333] tracking-normal ">
+                    <span className="opacity-50 border-r-1 pr-2">
+                      Figma
+                    </span>
                   </div>
                 </div>
                 
-                <p className="font-regular text-xl">
-                  Lorem ipsum asdnadasdad.
+                <p className="font-regular text-xl w-150 text-left">
+                  Designed a mobile application prototype in Figma aimed at helping students
+                   manage their finances effectively. The app allows users to track income, 
+                  set spending limits, categorize expenses, and visualize their budget through
+                   intuitive charts and summaries.
                 </p>
-
+              </div>
+              <div className="flex gap-3">
+                <a href="https://youtu.be/6396Tqet8HM" target="_blank" rel="noopener noreferrer" 
+                className="inline-block px-6 py-2 bg-[#333333] text-white font-semibold rounded-[5px] shadow-[0_0px_10px_rgba(0,0,0,0.1)] 
+                hover:bg-black duration-100 transition">
+                  Demo
+                </a>
+                <a href="https://www.figma.com/design/dpFATJ036dPW76OrtMp0Mk/UniBudget?node-id=0-1&t=tSixzDPLnYMOwujB-1" target="_blank" rel="noopener noreferrer" 
+                className="inline-block px-6 py-2 bg-white border-1 border-[#333333] text-[#333333] font-semibold rounded-[5px] shadow-[0_0px_10px_rgba(0,0,0,0.1)] 
+                hover:bg-[#333333] hover:text-white duration-100 transition">
+                  View Design
+                </a>
               </div>
             </div>
           </div>
 
           <div className="w-full flex justify-center pl-[15%]">
 
-            <div className="flex flex-col justify-center items-between w-[35%] pb-40">
+            <div className="flex flex-col justify-center items-between w-[35%] pb-40 gap-5">
               <div className="text-left w-auto text-[#333333] tracking-tight">
                 <div className="pb-5">
                   <span className="text-lg font-medium">Website Project</span>
-                  <div className="font-bold text-5xl">
+                  <div className="font-bold text-5xl pb-2">
                     Anthill
+                  </div>
+                  <div className="flex text-sm tracking-normal border-[#333333] opacity-50">
+                    <span className="pr-2">
+                      Flask
+                    </span>
+                    <span className="px-2 border-r-1 border-l-1">
+                      Python
+                    </span>
+                    <span className="px-2">
+                      Bootstrap
+                    </span>
                   </div>
                 </div>
                 
-                <p className="font-regular text-xl text-justify w-150">
-                  Developed a web-based platform designed 
+                <p className="font-regular text-xl text-left w-150">
+                  Designed and developed a web-based platform made 
                   exclusively for IIT students to connect with employers and find 
                   opportunities such as part-time jobs, one-time projects,
-                   and on-the-job training offers. The system allows students to create profiles, 
+                   and on-the-job training offers. It allows students to create profiles, 
                    showcase their skills, and apply for job postings, 
                   while employers can post job opportunities, review applicants, 
                   and manage engagements.
                 </p>
 
+              </div>
+              <div className="flex gap-3">
+                <a href="https://youtu.be/_rOwAOZ62zI?si=8GLDZ-KbxW7VJUj4" target="_blank" rel="noopener noreferrer" 
+                className="inline-block px-6 py-2 bg-[#333333] text-white font-semibold rounded-[5px] shadow-[0_0px_10px_rgba(0,0,0,0.1)] 
+                hover:bg-black duration-100 transition">
+                  Demo
+                </a>
+                <a href="" target="_blank" rel="noopener noreferrer" 
+                className="inline-block px-6 py-2 bg-white border-1 border-[#333333] text-[#333333] font-semibold 
+                rounded-[5px] shadow-[0_0px_10px_rgba(0,0,0,0.1)] hover:bg-[#333333] hover:text-white duration-100 transition">
+                  View Code
+                </a>
+                <a href="https://www.figma.com/design/HHo2LSlDqYcMS93JMyKj05/CCC181?node-id=160-29&t=OEsGBzWeUwGbbrCO-1" target="_blank" rel="noopener noreferrer" 
+                className="inline-block px-6 py-2 bg-white border-1 border-[#333333] text-[#333333] font-semibold rounded-[5px] 
+                shadow-[0_0px_10px_rgba(0,0,0,0.1)] hover:bg-[#333333] hover:text-white duration-100 transition">
+                  View Design
+                </a>
               </div>
             </div>
 
