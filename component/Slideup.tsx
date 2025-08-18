@@ -17,7 +17,7 @@ export default function SlideUp({
   const [ref, inView] = useInView({
     triggerOnce: true,
     rootMargin: offset,
-    threshold: 0.1
+    threshold: 0.2
   });
 
   useEffect(() => {
@@ -26,7 +26,7 @@ export default function SlideUp({
         opacity: 1,
         y: 0,
         transition: {
-          duration: 0.6,
+          duration: 1,
           ease: 'easeOut',
         },
       });
@@ -36,7 +36,7 @@ export default function SlideUp({
   return (
     <motion.div
       ref={ref}
-      initial={{ opacity: 0, y: 70 }}
+      initial={{ opacity: 100, y: 200 }}
       animate={controls}
       className={className}
       style={{ width: '100%' }}
