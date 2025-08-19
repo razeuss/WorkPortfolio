@@ -214,7 +214,8 @@ export default function Home() {
 
               <div className="h-[10%] hover:h-[20%] group transition-all duration-500">
                 <SlideUp className="h-full"> 
-                  <button className="bg-white border-[#333333] border-2 group-hover:border-[#333333] group-hover:bg-[#333333] h-full w-full rounded-[20px] shadow-[0_0px_10px_rgba(0,0,0,0.07)] flex 
+                  <a href="https://drive.google.com/file/d/180tZIL7UdTybk6CSIsN7HbVbwwlUV5Du/view?usp=sharing" target="_blank" rel="noopener noreferrer" 
+                  className="bg-white border-[#333333] border-2 group-hover:border-[#333333] group-hover:bg-[#333333] h-full w-full rounded-[20px] shadow-[0_0px_10px_rgba(0,0,0,0.07)] flex 
                   justify-center items-center pb-2 px-10 relative overflow-hidden text-[#333333] group-hover:text-white group-hover:pt-8 transition-all duration-500 ">
                     
                     <div className="relative flex flex-col">
@@ -230,7 +231,7 @@ export default function Home() {
 
                     </div>
 
-                  </button>
+                  </a>
                 </SlideUp>               
               </div>
 
@@ -310,11 +311,11 @@ export default function Home() {
         </div>
 
 
-        <div className="h-auto flex flex-col justify-center items-center w-full bg-[#f0f0f0] py-30">
+        <div className="h-auto flex flex-col justify-center items-center w-full bg-white py-30">
           <div className="w-[70%] pb-20">
             <SlideUp >
               <div className="font-bold text-6xl text-[#333333] tracking-tighter">
-                Projects
+                Selected works.
               </div>
             </SlideUp>
           </div>
@@ -432,10 +433,20 @@ export default function Home() {
           </div>
           
           <div className="w-[70%]">
-            <SlideUp>
-              <Stack></Stack>
-            </SlideUp>     
+              <Stack></Stack>    
           </div>
+
+        </div>
+
+        <div>
+          <div>
+
+          </div>
+
+          <div>
+
+          </div>
+
 
         </div>
 
