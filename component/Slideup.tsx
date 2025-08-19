@@ -6,18 +6,20 @@ import { useEffect } from 'react';
 
 export default function SlideUp({
   children,
-  offset = '0px',
+  offset = '10px',
+  threshold = 0.2,   
   className = '',
 }: {
   children: React.ReactNode;
   offset?: string;
+  threshold?: number;
   className?: string;
 }) {
   const controls = useAnimation();
   const [ref, inView] = useInView({
     triggerOnce: true,
     rootMargin: offset,
-    threshold: 0.2
+    threshold, 
   });
 
   useEffect(() => {
@@ -36,7 +38,7 @@ export default function SlideUp({
   return (
     <motion.div
       ref={ref}
-      initial={{ opacity: 100, y: 200 }}
+      initial={{ opacity: 0, y: 200 }} 
       animate={controls}
       className={className}
       style={{ width: '100%' }}
