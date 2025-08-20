@@ -363,8 +363,8 @@ export default function Home() {
                 </div>
               </SlideUp>
 
-              <SlideUp className="flex justify-start items-center">
-                <div className="flex flex-col justify-center items-center sm:items-start w-[100%] sm:w-[50%] sm:pb-40">
+              <SlideUp className="flex">
+                <div className="flex flex-col justify-center items-center sm:items-start w-[100%] sm:pb-40">
                   <div className="text-center sm:text-left w-auto text-[#333333] tracking-normal pb-5">
                     <div className="pb-5">
                       <span className="text-md sm:text-lg font-medium">Design Project</span>
@@ -402,68 +402,67 @@ export default function Home() {
               </SlideUp>
             </div>
 
-          <div className="sm:w-full flex flex-col sm:flex-row justify-center pl-[5%] sm:pl-[15%]">
-            <SlideUp>
-              <div className="flex flex-col order-2 sm:order-1 justify-center items-center sm:items-start sm:w-[35%] pb-20 sm:pb-40 gap-5 pr-[5%] sm:pr-0">
-                <div className="text-center sm:text-left w-auto text-[#333333] tracking-tight">
-                  <div className="pb-5">
-                    <span className="text-md sm:text-lg  font-medium">Website Project</span>
-                    <div className="font-bold text-2xl sm:text-5xl pb-2">
-                      Anthill
-                    </div>
-                    <div className="flex justify-center sm:justify-start text-sm tracking-normal border-[#333333] opacity-50">
-                      <span className="pr-2">
-                        Flask
-                      </span>
-                      <span className="px-2 border-r-1 border-l-1">
-                        Python
-                      </span> 
-                      <span className="px-2">
-                        Bootstrap
-                      </span>
-                    </div>
-                  </div>
-                  
-                  <p className="font-regular text-md sm:text-xl w-full sm:w-[90%]">
-                    Designed and developed a web-based platform made 
-                    exclusively for IIT students to connect with employers and find 
-                    opportunities such as part-time jobs, one-time projects,
-                    and on-the-job training offers. It allows students to create profiles, 
-                    showcase their skills, and apply for job postings, 
-                    while employers can post job opportunities, review applicants, 
-                    and manage engagements.
-                  </p>
+            <div className="sm:w-full flex flex-col sm:flex-row justify-center pl-[5%] sm:pl-[15%]">
+                <div className="flex flex-col order-2 sm:order-1 justify-center items-center sm:items-start sm:w-[35%] pb-20 sm:pb-40 pr-[5%] sm:pr-0">
+                  <SlideUp>
+                    <div className="text-center sm:text-left w-auto text-[#333333] tracking-tight mb-5">
+                      <div className="pb-5">
+                        <span className="text-md sm:text-lg  font-medium">Website Project</span>
+                        <div className="font-bold text-2xl sm:text-5xl pb-2">
+                          Anthill
+                        </div>
+                        <div className="flex justify-center sm:justify-start text-sm tracking-normal border-[#333333] opacity-50">
+                          <span className="pr-2">
+                            Flask
+                          </span>
+                          <span className="px-2 border-r-1 border-l-1">
+                            Python
+                          </span> 
+                          <span className="px-2">
+                            Bootstrap
+                          </span>
+                        </div>
+                      </div>
+                      
+                      <p className="font-regular text-md sm:text-xl w-full sm:w-[90%]">
+                        Designed and developed a web-based platform made 
+                        exclusively for IIT students to connect with employers and find 
+                        opportunities such as part-time jobs, one-time projects,
+                        and on-the-job training offers. It allows students to create profiles, 
+                        showcase their skills, and apply for job postings, 
+                        while employers can post job opportunities, review applicants, 
+                        and manage engagements.
+                      </p>
 
+                    </div>
+                    <div className="flex gap-3">
+                      <a href="https://youtu.be/_rOwAOZ62zI?si=8GLDZ-KbxW7VJUj4" target="_blank" rel="noopener noreferrer" 
+                      className="inline-flex gap-2 px-3 sm:px-6 py-2 bg-[#333333] text-white font-semibold rounded-[10px] shadow-[0_0px_10px_rgba(0,0,0,0.1)] 
+                      hover:bg-black duration-100 transition">
+                        <img src="/icons/newtab.svg" alt="noimg"/>
+                        <span>Demo</span>
+                      </a>
+                      <a href="https://github.com/razeuss/AntHill" target="_blank" rel="noopener noreferrer" 
+                      className="inline-block px-3 sm:px-6 py-2 bg-white border-1 border-[#333333] text-[#333333] font-semibold 
+                      rounded-[10px] shadow-[0_0px_10px_rgba(0,0,0,0.1)] hover:bg-[#333333] hover:text-white duration-100 transition">
+                        View Code
+                      </a>
+                      <a href="https://www.figma.com/design/HHo2LSlDqYcMS93JMyKj05/CCC181?node-id=160-29&t=OEsGBzWeUwGbbrCO-1" target="_blank" rel="noopener noreferrer" 
+                      className="inline-block px-3 sm:px-6 py-2 bg-white border-1 border-[#333333] text-[#333333] font-semibold rounded-[10px] 
+                      shadow-[0_0px_10px_rgba(0,0,0,0.1)] hover:bg-[#333333] hover:text-white duration-100 transition">
+                        View Design
+                      </a>
+                    </div>
+                  </SlideUp>
                 </div>
-                <div className="flex gap-3">
-                  <a href="https://youtu.be/_rOwAOZ62zI?si=8GLDZ-KbxW7VJUj4" target="_blank" rel="noopener noreferrer" 
-                  className="inline-flex gap-2 px-3 sm:px-6 py-2 bg-[#333333] text-white font-semibold rounded-[10px] shadow-[0_0px_10px_rgba(0,0,0,0.1)] 
-                  hover:bg-black duration-100 transition">
-                    <img src="/icons/newtab.svg" alt="noimg"/>
-                    <span>Demo</span>
-                  </a>
-                  <a href="https://github.com/razeuss/AntHill" target="_blank" rel="noopener noreferrer" 
-                  className="inline-block px-3 sm:px-6 py-2 bg-white border-1 border-[#333333] text-[#333333] font-semibold 
-                  rounded-[10px] shadow-[0_0px_10px_rgba(0,0,0,0.1)] hover:bg-[#333333] hover:text-white duration-100 transition">
-                    View Code
-                  </a>
-                  <a href="https://www.figma.com/design/HHo2LSlDqYcMS93JMyKj05/CCC181?node-id=160-29&t=OEsGBzWeUwGbbrCO-1" target="_blank" rel="noopener noreferrer" 
-                  className="inline-block px-3 sm:px-6 py-2 bg-white border-1 border-[#333333] text-[#333333] font-semibold rounded-[10px] 
-                  shadow-[0_0px_10px_rgba(0,0,0,0.1)] hover:bg-[#333333] hover:text-white duration-100 transition">
-                    View Design
-                  </a>
+          
+                <div className="w-auto order-1 sm:order-2 flex justify-end">
+                  <SlideUp>
+                    <img src="designs/anthill.svg" alt="noimg" className="h-130 sm:h-350"/>
+                  </SlideUp>
                 </div>
-              </div>
-            </SlideUp>
               
-             <SlideUp>
-              <div className="w-auto order-1 sm:order-2 flex justify-end">
-                <img src="designs/anthill.svg" alt="noimg" className="h-130 sm:h-350"/>
-              </div>
-             </SlideUp>
-
-          </div>
-
+            </div>
         </div>
 
 
