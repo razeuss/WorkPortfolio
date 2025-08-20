@@ -98,30 +98,30 @@ export default function Home() {
           <div className="h-5/9 sm:h-7/9  bg-[#f8f9fa] flex items-center justify-center overflow-hidden relative">
 
             
-              <div className="absolute -top-[70px] sm:-top-[50px] text-[#f8f9fa] font-black text-[150px] sm:text-[400px] leading-60 tracking-tighter z-0 text-center pointer-events-none select-none" style={{ textShadow: "-20px 15px 30px rgba(0,0,0,0.015)" }}>
+              <div className="absolute -top-[70px] min-[640px]:-top-[110px] min-[2000px]:-top-[50px] text-[#f8f9fa] font-black text-[150px] min-[640px]:text-[300px] min-[2000px]:text-[400px] leading-60 tracking-tighter z-0 text-center pointer-events-none select-none" style={{ textShadow: "-20px 15px 30px rgba(0,0,0,0.015)" }}>
                 ui/uxdesigner
               </div>
-              <div className="absolute top-[20px] sm:top-[190px] text-[#f8f9fa] font-black text-[150px] sm:text-[400px] leading-60 tracking-tighter z-2 text-center pointer-events-none select-none" style={{ textShadow: "-20px 15px 30px rgba(0,0,0,0.02)" }}>
+              <div className="absolute top-[20px] min-[640px]:top-[70px] min-[2000px]:top-[190px] text-[#f8f9fa] font-black text-[150px] min-[640px]:text-[300px] min-[2000px]:text-[400px] leading-60 tracking-tighter z-2 text-center pointer-events-none select-none" style={{ textShadow: "-20px 15px 30px rgba(0,0,0,0.02)" }}>
                 <span style={{ textShadow: "-20px 15px 30px rgba(0,0,0,0.06)" }}>rsoftware&</span>web<br/>
               </div>
-              <div className="absolute -top-[130px] sm:top-[190px] text-[#f8f9fa] font-black text-[150px] sm:text-[400px]  leading-60 tracking-tighter z-1 text-center pointer-events-none select-none" style={{ textShadow: "-20px 15px 30px rgba(0,0,0,0.02)" }}>
+              <div className="absolute -top-[130px] min-[640px]:top-[10px] min-[2000px]:top-[190px] text-[#f8f9fa] font-black text-[150px] min-[640px]:text-[300px] min-[2000px]:text-[400px]  leading-60 tracking-tighter z-1 text-center pointer-events-none select-none" style={{ textShadow: "-20px 15px 30px rgba(0,0,0,0.02)" }}>
                 <br/>veloperand<span style={{ textShadow: "-20px 15px 30px rgba(0,0,0,0.05)" }}>webdev</span>eloper
               </div>
-              <div className="absolute top-[200px] sm:top-[660px] text-[#f8f9fa] font-black text-[150px] sm:text-[400px]  leading-60 tracking-tighter z-0 text-center pointer-events-none select-none" style={{ textShadow: "-20px 15px 30px rgba(0,0,0,0.015)" }}>
+              <div className="absolute top-[200px] min-[640px]:top-[420px] min-[2000px]:top-[660px] text-[#f8f9fa] font-black text-[150px] min-[640px]:text-[300px] min-[2000px]:text-[400px]  leading-60 tracking-tighter z-0 text-center pointer-events-none select-none" style={{ textShadow: "-20px 15px 30px rgba(0,0,0,0.015)" }}>
                 webflowdesigner
               </div>
            
         
 
         
-            <div className="z-10 w-[90%] sm:w-[70%]  text-[#333333] font-bold lg:text-9xl sm:text-8xl text-4xl leading-10 xl:leading-30 sm:leading-25 flex flex-col items-start text-start">
+            <div className="z-10 w-[90%] sm:w-[70%]  text-[#333333] font-bold min-[640px]:text-8xl min-[2000px]:text-9xl text-4xl leading-10 min-[640px]:leading-21  min-[2000px]:leading-30 flex flex-col items-center text-center sm:items-start sm:text-start">
               <h1 className="tracking-tighter mb-2 xl:mb-5">
                 Software & Web<br />
                 developer
               </h1>
               <div className="text-xl font-medium tracking-tighter lg:text-2xl lg:p-2">
                 <p className="text-[#333333] mb-6 lg:mb-15">Crafting responsive and accessible interfaces.</p>
-                <div className="inline-flex items-center bg-[#f0f0f0] px-3 sm:px-6 py-1 sm:py-2 text-lg lg:text-xl lg:text-2xl font-medium rounded-[30px]">
+                <div className="inline-flex items-center text-white bg-[#333333] px-3 sm:px-6 py-1 sm:py-2 text-lg lg:text-xl lg:text-2xl font-medium rounded-[30px]">
                   <span className="absolute w-2 h-2 sm:w-4 sm:h-4 bg-green-500 rounded-full mr-3 animate-ping"></span>
                   <span className="relative w-2 h-2 sm:w-4 sm:h-4 bg-green-500 rounded-full mr-3"></span>
                   Available for work
@@ -276,7 +276,7 @@ export default function Home() {
           </div>
           <SlideUp>
 
-          <div className="h-100 sm:h-200 justify-start flex items-center">
+          <div className="h-100 sm:h-185 justify-start flex items-center">
             <div ref={scrollRef} onScroll={checkScroll} className="flex gap-10 overflow-x-auto no-scrollbar z-0 h-full w-full px-[5%] sm:px-[15%]"> 
                 <div className="cell relative flex-shrink-0 gap-10 w-full h-full overflow-hidden rounded-[20px]">
                   <img src={`/exp/5.jpg`} alt={`Cell}`} className="w-full h-full object-cover bg-[#f0f0f0]"/>
@@ -350,7 +350,7 @@ export default function Home() {
                 <img src="designs/unib1.svg" alt="noimg" className="h-150 sm:h-250"/>
             </div>
 
-            <div className="flex flex-col justify-center items-center sm:items-start w-[100%] sm:w-[50%] pb-40">
+            <div className="flex flex-col justify-center items-center sm:items-start w-[100%] sm:w-[50%] sm:pb-40">
                 <div className="text-center sm:text-left w-auto text-[#333333] tracking-normal pb-5">
                   <div className="pb-5">
                     <span className="text-md sm:text-lg font-medium">Design Project</span>
@@ -373,13 +373,13 @@ export default function Home() {
                 </div>
                 <div className="flex gap-3">
                   <a href="https://youtu.be/6396Tqet8HM" target="_blank" rel="noopener noreferrer" 
-                  className="inline-flex gap-2 px-6 py-2 bg-[#333333] flex text-white font-semibold rounded-[10px] shadow-[0_0px_10px_rgba(0,0,0,0.1)] 
+                  className="inline-flex gap-2 px-3 sm:px-6 py-2 bg-[#333333] flex text-white font-semibold rounded-[10px] shadow-[0_0px_10px_rgba(0,0,0,0.1)] 
                   hover:bg-black duration-100 transition">
                     <img src="/icons/newtab.svg" alt="noimg"/>
                     <span>Demo</span>
                   </a>
                   <a href="https://www.figma.com/design/dpFATJ036dPW76OrtMp0Mk/UniBudget?node-id=0-1&t=tSixzDPLnYMOwujB-1" target="_blank" rel="noopener noreferrer" 
-                  className="inline-block px-6 py-2 bg-white border-1 border-[#333333] text-[#333333] font-semibold rounded-[10px] shadow-[0_0px_10px_rgba(0,0,0,0.1)] 
+                  className="inline-block px-3 sm:px-6 py-2 bg-white border-1 border-[#333333] text-[#333333] font-semibold rounded-[10px] shadow-[0_0px_10px_rgba(0,0,0,0.1)] 
                   hover:bg-[#333333] hover:text-white duration-100 transition">
                     View Design
                   </a>
@@ -387,29 +387,29 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="w-full flex justify-center pl-[15%]">
+          <div className="sm:w-full flex flex-col sm:flex-row justify-center pl-[5%] sm:pl-[15%]">
 
-            <div className="flex flex-col justify-center items-between w-[35%] pb-40 gap-5">
-              <div className="text-left w-auto text-[#333333] tracking-tight">
+            <div className="flex flex-col order-2 sm:order-1 justify-center items-center sm:items-start sm:w-[35%] pb-20 sm:pb-40 gap-5 pr-[5%] sm:pr-0">
+              <div className="text-center sm:text-left w-auto text-[#333333] tracking-tight">
                 <div className="pb-5">
-                  <span className="text-lg font-medium">Website Project</span>
-                  <div className="font-bold text-5xl pb-2">
+                  <span className="text-md sm:text-lg  font-medium">Website Project</span>
+                  <div className="font-bold text-2xl sm:text-5xl pb-2">
                     Anthill
                   </div>
-                  <div className="flex text-sm tracking-normal border-[#333333] opacity-50">
+                  <div className="flex justify-center sm:justify-start text-sm tracking-normal border-[#333333] opacity-50">
                     <span className="pr-2">
                       Flask
                     </span>
                     <span className="px-2 border-r-1 border-l-1">
                       Python
-                    </span>
+                    </span> 
                     <span className="px-2">
                       Bootstrap
                     </span>
                   </div>
                 </div>
                 
-                <p className="font-regular text-xl text-left w-[90%]">
+                <p className="font-regular text-md sm:text-xl w-full sm:w-[90%]">
                   Designed and developed a web-based platform made 
                   exclusively for IIT students to connect with employers and find 
                   opportunities such as part-time jobs, one-time projects,
@@ -422,26 +422,26 @@ export default function Home() {
               </div>
               <div className="flex gap-3">
                 <a href="https://youtu.be/_rOwAOZ62zI?si=8GLDZ-KbxW7VJUj4" target="_blank" rel="noopener noreferrer" 
-                className="inline-flex gap-2 px-6 py-2 bg-[#333333] text-white font-semibold rounded-[10px] shadow-[0_0px_10px_rgba(0,0,0,0.1)] 
+                className="inline-flex gap-2 px-3 sm:px-6 py-2 bg-[#333333] text-white font-semibold rounded-[10px] shadow-[0_0px_10px_rgba(0,0,0,0.1)] 
                 hover:bg-black duration-100 transition">
                   <img src="/icons/newtab.svg" alt="noimg"/>
                   <span>Demo</span>
                 </a>
                 <a href="https://github.com/razeuss/AntHill" target="_blank" rel="noopener noreferrer" 
-                className="inline-block px-6 py-2 bg-white border-1 border-[#333333] text-[#333333] font-semibold 
+                className="inline-block px-3 sm:px-6 py-2 bg-white border-1 border-[#333333] text-[#333333] font-semibold 
                 rounded-[10px] shadow-[0_0px_10px_rgba(0,0,0,0.1)] hover:bg-[#333333] hover:text-white duration-100 transition">
                   View Code
                 </a>
                 <a href="https://www.figma.com/design/HHo2LSlDqYcMS93JMyKj05/CCC181?node-id=160-29&t=OEsGBzWeUwGbbrCO-1" target="_blank" rel="noopener noreferrer" 
-                className="inline-block px-6 py-2 bg-white border-1 border-[#333333] text-[#333333] font-semibold rounded-[10px] 
+                className="inline-block px-3 sm:px-6 py-2 bg-white border-1 border-[#333333] text-[#333333] font-semibold rounded-[10px] 
                 shadow-[0_0px_10px_rgba(0,0,0,0.1)] hover:bg-[#333333] hover:text-white duration-100 transition">
                   View Design
                 </a>
               </div>
             </div>
               
-             <div className="w-auto flex justify-end">
-              <img src="designs/anthill.svg" alt="noimg" className="h-350"/>
+             <div className="w-auto order-1 sm:order-2 flex justify-end">
+              <img src="designs/anthill.svg" alt="noimg" className="h-130 sm:h-350"/>
              </div>
 
           </div>
@@ -450,17 +450,17 @@ export default function Home() {
 
 
         <div className="h-auto w-full flex flex-col justify-center text-center items-center pb-30">
-          <div className="font-bold text-6xl text-[#333333] tracking-tighter pb-20 leading-17">
+          <div className="font-bold text-3xl sm:text-6xl text-[#333333] tracking-tighter pb-20 sm:leading-17">
              Here is my tech stack. <br/>
              Let's work together.
           </div>
-          <div className="w-[70%]">
+          <div className="w-[90%] sm:w-[70%]">
               <Stack></Stack>    
           </div>
 
         </div>
 
-        <div className="h-auto w-full flex flex-col justify-center items-center py-30 bg-[#f8f9fa]">
+        <div className="h-20 w-full flex flex-col justify-center items-center bg-[#f8f9fa]">
         </div>
       </main>
     </div>
