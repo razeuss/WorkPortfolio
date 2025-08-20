@@ -28,7 +28,7 @@ export default function SlideUp({
         opacity: 1,
         y: 0,
         transition: {
-          duration: 0.6,
+          duration: 1,
           ease: 'easeOut',
         },
       });
@@ -38,7 +38,7 @@ export default function SlideUp({
   return (
     <motion.div
       ref={ref}
-      initial={{ opacity: 0, y: 200 }} 
+      initial={{ opacity: 0, y: 100 }} 
       animate={controls}
       className={className}
       style={{ width: '100%' }}
