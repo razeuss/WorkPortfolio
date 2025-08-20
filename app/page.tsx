@@ -15,6 +15,38 @@ export default function Home() {
   const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(true);
 
+  const experiences = [
+  {
+    img: "/exp/5.jpg",
+    date: "September 2023",
+    title: "Powered the computer applications",
+    subtitle: "department election with our voting system.",
+    gradient: "from-black/70 via-black/40 to-transparent"
+  },
+  {
+    img: "/exp/2.jpg",
+    date: "April 2024",
+    title: "Invited to showcase our system",
+    subtitle: "to computer programming students.",
+    gradient: "from-black/60 via-black/50 to-transparent"
+  },
+  {
+    img: "/exp/4.jpg",
+    date: "June 2025",
+    title: "Won the first quantum computing",
+    subtitle: "and blockchain hackathon.",
+    gradient: "from-black/80 via-black/50 to-transparent"
+  },
+  {
+    img: "/exp/1.jpg",
+    date: "July 2025",
+    title: "Completed internship at",
+    subtitle: "anura innovations.",
+    gradient: "from-black/70 via-black/10 to-transparent"
+  }
+];
+
+
   const checkScroll = () => {
     if (scrollRef.current) {
       const { scrollLeft, scrollWidth, clientWidth } = scrollRef.current;
@@ -274,52 +306,27 @@ export default function Home() {
             </div>
             </SlideUp>
           </div>
+
           <SlideUp>
-
-          <div className="h-100 sm:h-185 justify-start flex items-center">
-            <div ref={scrollRef} onScroll={checkScroll} className="flex gap-10 overflow-x-auto no-scrollbar z-0 h-full w-full px-[5%] sm:px-[15%]"> 
-                <div className="cell relative flex-shrink-0 gap-10 w-full h-full overflow-hidden rounded-[20px]">
-                  <img src={`/exp/5.jpg`} alt={`Cell}`} className="w-full h-full object-cover bg-[#f0f0f0]"/>
-                  <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-transparent"></div>
-                  <div className="absolute top-4 sm:top-10 left-4 sm:left-10 leading-6 sm:leading-10 flex flex-col text-white text-lg sm:text-3xl font-bold tracking-normal">
-                    <span className="text-sm sm:text-lg font-medium">September 2023</span>
-                    <span>Powered the computer applications</span>
-                    <span>department election with our voting system.</span>
+            <div className="h-100 sm:h-185 justify-start flex items-center">
+              <div ref={scrollRef} onScroll={checkScroll} className="flex gap-10 overflow-x-auto no-scrollbar z-0 h-full w-full px-[5%] sm:px-[15%]">
+                {experiences.map((exp, i) => (
+                  <div key={i} className="cell relative flex-shrink-0 w-full h-full overflow-hidden rounded-[20px] sm:rounded-[30px] bg-gray-100">
+                    <img src={exp.img} alt={`Experience ${i}`} className="w-full h-full object-cover bg-[#f0f0f0]"/>
+                    <div className={`absolute inset-0 bg-gradient-to-b ${exp.gradient}`}></div>
+                    <div className="absolute top-4 left-4 sm:top-10 sm:left-10 leading-6 sm:leading-10 flex flex-col text-white text-lg sm:text-3xl font-bold tracking-normal">
+                      <span className="text-sm sm:text-lg font-medium">{exp.date}</span>
+                      <span>{exp.title}</span>
+                      <span dangerouslySetInnerHTML={{ __html: exp.subtitle.replace(/\n/g, "<br/>") }} />
+                    </div>
                   </div>
-                </div>
-
-                 <div className="cell relative flex-shrink-0 w-full h-full rounded-[30px] overflow-hidden bg-gray-100">
-                  <img src={`/exp/2.jpg`} alt="Cell" className="w-full h-full object-cover"/>
-                  <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-transparent"></div>
-                  <div className="absolute top-4 left-4 sm:top-10 sm:left-10 leading-6 sm:leading-10 flex flex-col text-white text-lg sm:text-3xl font-bold tracking-normal">
-                    <span className="text-sm sm:text-lg font-medium">April 2024</span>
-                    <span>Invited to showcase our system</span>
-                    <span>to computer programming students.</span>
-                  </div>
-                </div>
-
-                <div className="cell relative flex-shrink-0 w-[100%] h-full rounded-[30px] overflow-hidden bg-gray-100">
-                  <img src={`/exp/4.jpg`} alt={`Cell}`} className="w-full h-full object-cover"/>
-                  <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/50 to-transparent"></div>     
-                  <div className="absolute top-4 left-4 sm:top-10 sm:left-10 leading-6 sm:leading-10 flex flex-col text-white text-lg sm:text-3xl font-bold tracking-normal">
-                    <span className="text-sm sm:text-lg font-medium">June 2025</span>
-                    <span>Won the first quantum computing <br/>and blockchain hackathon.</span>
-                  </div>
-                </div>
-                
-                 <div className="cell relative flex-shrink-0 w-[100%] h-full rounded-[30px] overflow-hidden bg-gray-100">
-                  <img src={`/exp/1.jpg`} alt={`Cell}`} className="w-full h-full object-cover"/>
-                  <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/10 to-transparent"></div>
-                  <div className="absolute top-4 left-4 sm:top-10 sm:left-10 leading-6 sm:leading-10 flex flex-col text-white text-lg sm:text-3xl font-bold tracking-normal">
-                    <span className="text-sm sm:text-lg font-medium">July 2025</span>
-                    <span>Completed internship at <br/> anura innovations.</span>
-                  </div>
-                </div>
+                ))}
               </div>
-          </div>
+            </div>
           </SlideUp>
 
-          <div className=" gap-5 pt-10 flex justify-end gap-10 w-[70%] hidden sm:flex">
+          <SlideUp>
+            <div className=" gap-5 pt-10 flex justify-end gap-10 w-[70%] hidden sm:flex">
 
             {canScrollLeft && (
               <button onClick={() => scroll("left")} className="bg-[#f0f0f0] text-[#333333] shadow-md rounded-full p-2 z-10 hover:bg-[#555555] hover:text-[#f0f0f0] transition">
@@ -334,118 +341,128 @@ export default function Home() {
               </button>)}
 
           </div>
+          </SlideUp>
 
         </div>
 
 
         <div className="h-auto flex flex-col justify-center items-center w-full bg-white py-20 sm:py-30">
-          <div className="w-[90%] sm:w-[70%] sm:pb-20">
+
+          <SlideUp className="flex justify-center">
+            <div className="w-[90%] sm:w-[70%] sm:pb-20">
               <div className="font-bold text-3xl sm:text-6xl text-[#333333] tracking-tighter">
                 Featured projects.
               </div>
           </div>
+          </SlideUp>
 
-          <div className="w-[90%] flex flex-col sm:flex-row justify-center">
-            <div className="w-[100%] sm:w-[50%] flex justify-end">
-                <img src="designs/unib1.svg" alt="noimg" className="h-150 sm:h-250"/>
-            </div>
+            <div className="w-[90%] flex flex-col sm:flex-row justify-center">
+              <SlideUp className="flex justify-end">
+                <div className="w-[100%] sm:w-[50%] flex justify-end">
+                    <img src="designs/unib1.svg" alt="noimg" className="h-150 sm:h-250"/>
+                </div>
+              </SlideUp>
 
-            <div className="flex flex-col justify-center items-center sm:items-start w-[100%] sm:w-[50%] sm:pb-40">
-                <div className="text-center sm:text-left w-auto text-[#333333] tracking-normal pb-5">
-                  <div className="pb-5">
-                    <span className="text-md sm:text-lg font-medium">Design Project</span>
-                    <div className="font-bold text-2xl sm:text-5xl pb-2">
-                      UniBudget
+              <SlideUp className="flex">
+                <div className="flex flex-col justify-center items-center sm:items-start w-[100%] sm:pb-40">
+                  <div className="text-center sm:text-left w-auto text-[#333333] tracking-normal pb-5">
+                    <div className="pb-5">
+                      <span className="text-md sm:text-lg font-medium">Design Project</span>
+                      <div className="font-bold text-2xl sm:text-5xl pb-2">
+                        UniBudget
+                      </div>
+                      <div className="flex justify-center sm:justify-start text-sm gap-2 border-[#333333] tracking-normal">
+                        <span className="opacity-50">
+                          Figma
+                        </span>
+                      </div>
                     </div>
-                    <div className="flex justify-center sm:justify-start text-sm gap-2 border-[#333333] tracking-normal">
-                      <span className="opacity-50">
-                        Figma
-                      </span>
+                    
+                    <p className="font-regular text-md sm:text-xl w-[100%] sm:w-[60%] text-center sm:text-left">
+                      Designed a mobile application prototype in Figma aimed at helping students
+                      manage their finances effectively. The app allows users to track income, 
+                      set spending limits, categorize expenses, and visualize their budget through
+                      intuitive charts and summaries.
+                    </p>
+                  </div>
+                  <div className="flex gap-3">
+                      <a href="https://youtu.be/6396Tqet8HM" target="_blank" rel="noopener noreferrer" 
+                      className="inline-flex gap-2 px-3 sm:px-6 py-2 bg-[#333333] flex text-white font-semibold rounded-[10px] shadow-[0_0px_10px_rgba(0,0,0,0.1)] 
+                      hover:bg-black duration-100 transition">
+                        <img src="/icons/newtab.svg" alt="noimg"/>
+                        <span>Demo</span>
+                      </a>
+                      <a href="https://www.figma.com/design/dpFATJ036dPW76OrtMp0Mk/UniBudget?node-id=0-1&t=tSixzDPLnYMOwujB-1" target="_blank" rel="noopener noreferrer" 
+                      className="inline-block px-3 sm:px-6 py-2 bg-white border-1 border-[#333333] text-[#333333] font-semibold rounded-[10px] shadow-[0_0px_10px_rgba(0,0,0,0.1)] 
+                      hover:bg-[#333333] hover:text-white duration-100 transition">
+                        View Design
+                      </a>
                     </div>
-                  </div>
-                  
-                  <p className="font-regular text-md sm:text-xl w-[100%] sm:w-[60%] text-center sm:text-left">
-                    Designed a mobile application prototype in Figma aimed at helping students
-                    manage their finances effectively. The app allows users to track income, 
-                    set spending limits, categorize expenses, and visualize their budget through
-                    intuitive charts and summaries.
-                  </p>
                 </div>
-                <div className="flex gap-3">
-                  <a href="https://youtu.be/6396Tqet8HM" target="_blank" rel="noopener noreferrer" 
-                  className="inline-flex gap-2 px-3 sm:px-6 py-2 bg-[#333333] flex text-white font-semibold rounded-[10px] shadow-[0_0px_10px_rgba(0,0,0,0.1)] 
-                  hover:bg-black duration-100 transition">
-                    <img src="/icons/newtab.svg" alt="noimg"/>
-                    <span>Demo</span>
-                  </a>
-                  <a href="https://www.figma.com/design/dpFATJ036dPW76OrtMp0Mk/UniBudget?node-id=0-1&t=tSixzDPLnYMOwujB-1" target="_blank" rel="noopener noreferrer" 
-                  className="inline-block px-3 sm:px-6 py-2 bg-white border-1 border-[#333333] text-[#333333] font-semibold rounded-[10px] shadow-[0_0px_10px_rgba(0,0,0,0.1)] 
-                  hover:bg-[#333333] hover:text-white duration-100 transition">
-                    View Design
-                  </a>
-                </div>
+              </SlideUp>
             </div>
-          </div>
 
-          <div className="sm:w-full flex flex-col sm:flex-row justify-center pl-[5%] sm:pl-[15%]">
+            <div className="sm:w-full flex flex-col sm:flex-row justify-center pl-[5%] sm:pl-[15%]">
+                <div className="flex flex-col order-2 sm:order-1 justify-center items-center sm:items-start sm:w-[35%] pb-20 sm:pb-40 pr-[5%] sm:pr-0">
+                  <SlideUp>
+                    <div className="text-center sm:text-left w-auto text-[#333333] tracking-tight mb-5">
+                      <div className="pb-5">
+                        <span className="text-md sm:text-lg  font-medium">Website Project</span>
+                        <div className="font-bold text-2xl sm:text-5xl pb-2">
+                          Anthill
+                        </div>
+                        <div className="flex justify-center sm:justify-start text-sm tracking-normal border-[#333333] opacity-50">
+                          <span className="pr-2">
+                            Flask
+                          </span>
+                          <span className="px-2 border-r-1 border-l-1">
+                            Python
+                          </span> 
+                          <span className="px-2">
+                            Bootstrap
+                          </span>
+                        </div>
+                      </div>
+                      
+                      <p className="font-regular text-md sm:text-xl w-full sm:w-[90%]">
+                        Designed and developed a web-based platform made 
+                        exclusively for IIT students to connect with employers and find 
+                        opportunities such as part-time jobs, one-time projects,
+                        and on-the-job training offers. It allows students to create profiles, 
+                        showcase their skills, and apply for job postings, 
+                        while employers can post job opportunities, review applicants, 
+                        and manage engagements.
+                      </p>
 
-            <div className="flex flex-col order-2 sm:order-1 justify-center items-center sm:items-start sm:w-[35%] pb-20 sm:pb-40 gap-5 pr-[5%] sm:pr-0">
-              <div className="text-center sm:text-left w-auto text-[#333333] tracking-tight">
-                <div className="pb-5">
-                  <span className="text-md sm:text-lg  font-medium">Website Project</span>
-                  <div className="font-bold text-2xl sm:text-5xl pb-2">
-                    Anthill
-                  </div>
-                  <div className="flex justify-center sm:justify-start text-sm tracking-normal border-[#333333] opacity-50">
-                    <span className="pr-2">
-                      Flask
-                    </span>
-                    <span className="px-2 border-r-1 border-l-1">
-                      Python
-                    </span> 
-                    <span className="px-2">
-                      Bootstrap
-                    </span>
-                  </div>
+                    </div>
+                    <div className="flex gap-3">
+                      <a href="https://youtu.be/_rOwAOZ62zI?si=8GLDZ-KbxW7VJUj4" target="_blank" rel="noopener noreferrer" 
+                      className="inline-flex gap-2 px-3 sm:px-6 py-2 bg-[#333333] text-white font-semibold rounded-[10px] shadow-[0_0px_10px_rgba(0,0,0,0.1)] 
+                      hover:bg-black duration-100 transition">
+                        <img src="/icons/newtab.svg" alt="noimg"/>
+                        <span>Demo</span>
+                      </a>
+                      <a href="https://github.com/razeuss/AntHill" target="_blank" rel="noopener noreferrer" 
+                      className="inline-block px-3 sm:px-6 py-2 bg-white border-1 border-[#333333] text-[#333333] font-semibold 
+                      rounded-[10px] shadow-[0_0px_10px_rgba(0,0,0,0.1)] hover:bg-[#333333] hover:text-white duration-100 transition">
+                        View Code
+                      </a>
+                      <a href="https://www.figma.com/design/HHo2LSlDqYcMS93JMyKj05/CCC181?node-id=160-29&t=OEsGBzWeUwGbbrCO-1" target="_blank" rel="noopener noreferrer" 
+                      className="inline-block px-3 sm:px-6 py-2 bg-white border-1 border-[#333333] text-[#333333] font-semibold rounded-[10px] 
+                      shadow-[0_0px_10px_rgba(0,0,0,0.1)] hover:bg-[#333333] hover:text-white duration-100 transition">
+                        View Design
+                      </a>
+                    </div>
+                  </SlideUp>
                 </div>
-                
-                <p className="font-regular text-md sm:text-xl w-full sm:w-[90%]">
-                  Designed and developed a web-based platform made 
-                  exclusively for IIT students to connect with employers and find 
-                  opportunities such as part-time jobs, one-time projects,
-                  and on-the-job training offers. It allows students to create profiles, 
-                  showcase their skills, and apply for job postings, 
-                  while employers can post job opportunities, review applicants, 
-                  and manage engagements.
-                </p>
-
-              </div>
-              <div className="flex gap-3">
-                <a href="https://youtu.be/_rOwAOZ62zI?si=8GLDZ-KbxW7VJUj4" target="_blank" rel="noopener noreferrer" 
-                className="inline-flex gap-2 px-3 sm:px-6 py-2 bg-[#333333] text-white font-semibold rounded-[10px] shadow-[0_0px_10px_rgba(0,0,0,0.1)] 
-                hover:bg-black duration-100 transition">
-                  <img src="/icons/newtab.svg" alt="noimg"/>
-                  <span>Demo</span>
-                </a>
-                <a href="https://github.com/razeuss/AntHill" target="_blank" rel="noopener noreferrer" 
-                className="inline-block px-3 sm:px-6 py-2 bg-white border-1 border-[#333333] text-[#333333] font-semibold 
-                rounded-[10px] shadow-[0_0px_10px_rgba(0,0,0,0.1)] hover:bg-[#333333] hover:text-white duration-100 transition">
-                  View Code
-                </a>
-                <a href="https://www.figma.com/design/HHo2LSlDqYcMS93JMyKj05/CCC181?node-id=160-29&t=OEsGBzWeUwGbbrCO-1" target="_blank" rel="noopener noreferrer" 
-                className="inline-block px-3 sm:px-6 py-2 bg-white border-1 border-[#333333] text-[#333333] font-semibold rounded-[10px] 
-                shadow-[0_0px_10px_rgba(0,0,0,0.1)] hover:bg-[#333333] hover:text-white duration-100 transition">
-                  View Design
-                </a>
-              </div>
-            </div>
+          
+                <div className="w-auto order-1 sm:order-2 flex justify-end">
+                  <SlideUp>
+                    <img src="designs/anthill.svg" alt="noimg" className="h-130 sm:h-350"/>
+                  </SlideUp>
+                </div>
               
-             <div className="w-auto order-1 sm:order-2 flex justify-end">
-              <img src="designs/anthill.svg" alt="noimg" className="h-130 sm:h-350"/>
-             </div>
-
-          </div>
-
+            </div>
         </div>
 
 
