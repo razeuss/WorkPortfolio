@@ -10,7 +10,7 @@ import LinkedinIcon from "@/component/icons/Linkedin";
 import GmailIcon from "@/component/icons/Gmail";
 import Stack from "@/component/icons/Teckstack";
 import Image from "next/image";
-import myImg from "@/public/myimg.jpg";
+import myImg from "@/public/myimg.webp";
 import Anthill from "@/public/designs/anthill.png";
 import newtabicon from "@/public/icons/newtab.svg";
 import unibudget from "@/public/designs/unib.png";
@@ -85,7 +85,7 @@ export default function Home() {
   const scrollAmount = getCellWidth();
   const start = container.scrollLeft;
   const end = start + (direction === "left" ? -scrollAmount : scrollAmount);
-  const duration = 1500; // ms — make this higher for slower scroll
+  const duration = 1500; 
   const startTime = performance.now();
 
   const easeOutCubic = (t: number) => 1 - Math.pow(1 - t, 3);
@@ -323,7 +323,7 @@ export default function Home() {
               <div ref={scrollRef} onScroll={checkScroll} className="flex gap-10 overflow-x-auto no-scrollbar z-0 h-full w-full px-[5%] sm:px-[15%]">
                 {experiences.map((exp, i) => (
                   <div key={i} className="cell relative flex-shrink-0 w-full h-full overflow-hidden rounded-[20px] sm:rounded-[30px] bg-gray-100">
-                    <Image src={exp.img} fill alt={`Experience ${i}`} className="w-full h-full object-cover bg-[#f0f0f0]"/>
+                    <Image src={exp.img} fill alt={`Experience ${i}`} loading="eager" className="w-full h-full object-cover bg-[#f0f0f0]"/>
                     <div className={`absolute inset-0 bg-gradient-to-b ${exp.gradient}`}></div>
                     <div className="absolute top-4 left-4 sm:top-10 sm:left-10 leading-6 sm:leading-10 flex flex-col text-white text-lg sm:text-3xl font-bold tracking-normal">
                       <span className="text-sm sm:text-lg font-medium">{exp.date}</span>
