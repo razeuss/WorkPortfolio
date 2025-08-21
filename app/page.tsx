@@ -9,6 +9,11 @@ import GithubIcon from "@/component/icons/Github";
 import LinkedinIcon from "@/component/icons/Linkedin";
 import GmailIcon from "@/component/icons/Gmail";
 import Stack from "@/component/icons/Teckstack";
+import Image from "next/image";
+import myImg from "@/public/myimg.jpg";
+import Anthill from "@/public/designs/anthill.svg";
+import newtabicon from "@/public/icons/newtab.svg";
+import unibudget from "@/public/designs/unib1.svg";
 
 export default function Home() {
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -211,7 +216,7 @@ export default function Home() {
             <div className="w-[40%] flex flex-col gap-5">
               <SlideUp className="h-[90%] sm:h-full">
                  <div className="bg-[#2c2c2c] h-full w-full rounded-[20px] overflow-hidden shadow-[0_0px_10px_rgba(0,0,0,0.1)] transition-all duration-500 hover:shadow-[0_12px_10px_rgba(0,0,0,0.3)] hover:-translate-y-3 group">
-                  <img src="myimg.jpg" alt="no img"  className="object-cover w-full h-full transition-all duration-500 group-hover:scale-105"/>
+                  <Image src={myImg} alt="no img"  className="object-cover transition-all duration-500 group-hover:scale-105"/>
                 </div>
               </SlideUp>
               <SlideUp className="h-[10%] sm:hidden"> 
@@ -253,7 +258,7 @@ export default function Home() {
               </div>
               <SlideUp className="sm:h-[30%] h-[65%]">
                 <div className="bg-[#f0f0f0] h-full flex flex-col w-full rounded-[20px] p-3 sm:p-10 gap-4 text-[#333333] justify-between">
-                  <h1 className="font-bold text-xl sm:text-4xl tracking-tighter">I'm Radz.</h1>
+                  <h1 className="font-bold text-xl sm:text-4xl tracking-tighter">I&apos;m Radz.</h1>
                   <p className="text-sm sm:text-xl text-[#333333] tracking-tighter">A 4th-year Computer Science student at Mindanao State University - Iligan Institute of Technology.
                     I build mobile and desktop applications, with a strong focus on web development.</p>
                 </div>
@@ -312,7 +317,7 @@ export default function Home() {
               <div ref={scrollRef} onScroll={checkScroll} className="flex gap-10 overflow-x-auto no-scrollbar z-0 h-full w-full px-[5%] sm:px-[15%]">
                 {experiences.map((exp, i) => (
                   <div key={i} className="cell relative flex-shrink-0 w-full h-full overflow-hidden rounded-[20px] sm:rounded-[30px] bg-gray-100">
-                    <img src={exp.img} alt={`Experience ${i}`} className="w-full h-full object-cover bg-[#f0f0f0]"/>
+                    <Image src={exp.img} fill alt={`Experience ${i}`} className="w-full h-full object-cover bg-[#f0f0f0]"/>
                     <div className={`absolute inset-0 bg-gradient-to-b ${exp.gradient}`}></div>
                     <div className="absolute top-4 left-4 sm:top-10 sm:left-10 leading-6 sm:leading-10 flex flex-col text-white text-lg sm:text-3xl font-bold tracking-normal">
                       <span className="text-sm sm:text-lg font-medium">{exp.date}</span>
@@ -359,7 +364,7 @@ export default function Home() {
             <div className="w-[90%] flex flex-col sm:flex-row justify-center">
               <SlideUp className="flex justify-end">
                 <div className="w-[100%] sm:w-[50%] flex justify-end">
-                    <img src="designs/unib1.svg" alt="noimg" className="h-150 sm:h-250"/>
+                    <Image src={unibudget} alt="noimg" className="h-150 sm:h-250"/>
                 </div>
               </SlideUp>
 
@@ -389,7 +394,7 @@ export default function Home() {
                       <a href="https://youtu.be/6396Tqet8HM" target="_blank" rel="noopener noreferrer" 
                       className="inline-flex gap-2 px-3 sm:px-6 py-2 bg-[#333333] flex text-white font-semibold rounded-[10px] shadow-[0_0px_10px_rgba(0,0,0,0.1)] 
                       hover:bg-black duration-100 transition">
-                        <img src="/icons/newtab.svg" alt="noimg"/>
+                        <Image src={newtabicon} alt="noimg"/>
                         <span>Demo</span>
                       </a>
                       <a href="https://www.figma.com/design/dpFATJ036dPW76OrtMp0Mk/UniBudget?node-id=0-1&t=tSixzDPLnYMOwujB-1" target="_blank" rel="noopener noreferrer" 
@@ -402,7 +407,7 @@ export default function Home() {
               </SlideUp>
             </div>
 
-            <div className="sm:w-full flex flex-col sm:flex-row justify-center pl-[5%] sm:pl-[15%]">
+            <div className="sm:w-full flex flex-col sm:flex-row justify-between pl-[5%] sm:pl-[15%]">
                 <div className="flex flex-col order-2 sm:order-1 justify-center items-center sm:items-start sm:w-[35%] pb-20 sm:pb-40 pr-[5%] sm:pr-0">
                   <SlideUp>
                     <div className="text-center sm:text-left w-auto text-[#333333] tracking-tight mb-5">
@@ -435,11 +440,11 @@ export default function Home() {
                       </p>
 
                     </div>
-                    <div className="flex gap-3">
+                    <div className="flex gap-3 justify-center sm:justify-start">
                       <a href="https://youtu.be/_rOwAOZ62zI?si=8GLDZ-KbxW7VJUj4" target="_blank" rel="noopener noreferrer" 
                       className="inline-flex gap-2 px-3 sm:px-6 py-2 bg-[#333333] text-white font-semibold rounded-[10px] shadow-[0_0px_10px_rgba(0,0,0,0.1)] 
                       hover:bg-black duration-100 transition">
-                        <img src="/icons/newtab.svg" alt="noimg"/>
+                        <Image src={newtabicon} alt="noimg"/>
                         <span>Demo</span>
                       </a>
                       <a href="https://github.com/razeuss/AntHill" target="_blank" rel="noopener noreferrer" 
@@ -456,9 +461,9 @@ export default function Home() {
                   </SlideUp>
                 </div>
           
-                <div className="w-auto order-1 sm:order-2 flex justify-end">
+                <div className="order-1 sm:order-2 flex justify-end py-15">
                   <SlideUp>
-                    <img src="designs/anthill.svg" alt="noimg" className="h-130 sm:h-350"/>
+                    <Image src={Anthill} alt="noimg" height={1400}/>
                   </SlideUp>
                 </div>
               
@@ -469,7 +474,7 @@ export default function Home() {
         <div className="h-auto w-full flex flex-col justify-center text-center items-center pb-30">
           <div className="font-bold text-3xl sm:text-6xl text-[#333333] tracking-tighter pb-20 sm:leading-17">
              Here is my tech stack. <br/>
-             Let's work together.
+             Let&apos;s work together.
           </div>
           <div className="w-[90%] sm:w-[70%]">
               <Stack></Stack>    
