@@ -15,10 +15,10 @@ import Anthill from "@/public/designs/anthill.svg";
 import newtabicon from "@/public/icons/newtab.svg";
 import unibudget from "@/public/designs/unib1.svg";
 
-import exp1 from "@/public/exp/1.jpg";
-import exp2 from "@/public/exp/2.jpg";
-import exp3 from "@/public/exp/4.jpg";
-import exp4 from "@/public/exp/5.jpg";
+import exp1 from "@/app/assets/exp/1.jpg";
+import exp2 from "@/app/assets/exp/2.jpg";
+import exp3 from "@/app/assets/exp/4.jpg";
+import exp4 from "@/app/assets/exp/5.jpg";
 
 
 export default function Home() {
