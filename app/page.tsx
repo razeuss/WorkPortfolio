@@ -2,7 +2,7 @@
 import Header from "@/component/Header";
 import { useRef } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useMemo} from "react";
 import SlideUp from "@/component/Slideup";
 import InstagramIcon from "@/component/icons/Instagram";
 import GithubIcon from "@/component/icons/Github";
@@ -26,7 +26,7 @@ export default function Home() {
   const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(true);
 
-  const experiences = [
+  const experiences = useMemo(() => [
   {
     img: exp4,
     date: "September 2023",
@@ -55,7 +55,16 @@ export default function Home() {
     subtitle: "anura innovations.",
     gradient: "from-black/70 via-black/10 to-transparent"
   }
-];
+], []);
+
+
+useEffect(() => {
+  experiences.forEach((exp) => {
+    const img = new window.Image();
+    img.src = exp.img.src;
+  });
+}, [experiences]); 
+
 
 
   const checkScroll = () => {
@@ -323,7 +332,7 @@ export default function Home() {
               <div ref={scrollRef} onScroll={checkScroll} className="flex gap-10 overflow-x-auto no-scrollbar z-0 h-full w-full px-[5%] sm:px-[15%]">
                 {experiences.map((exp, i) => (
                   <div key={i} className="cell relative flex-shrink-0 w-full h-full overflow-hidden rounded-[20px] sm:rounded-[30px] bg-gray-100">
-                    <Image src={exp.img} fill alt={`Experience ${i}`} loading="eager" className="w-full h-full object-cover bg-[#f0f0f0]"/>
+                    <Image src={exp.img} fill alt={`Experience ${i}`} className="w-full h-full object-cover bg-[#f0f0f0]"/>
                     <div className={`absolute inset-0 bg-gradient-to-b ${exp.gradient}`}></div>
                     <div className="absolute top-4 left-4 sm:top-10 sm:left-10 leading-6 sm:leading-10 flex flex-col text-white text-lg sm:text-3xl font-bold tracking-normal">
                       <span className="text-sm sm:text-lg font-medium">{exp.date}</span>
