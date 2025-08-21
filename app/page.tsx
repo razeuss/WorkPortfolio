@@ -11,14 +11,14 @@ import GmailIcon from "@/component/icons/Gmail";
 import Stack from "@/component/icons/Teckstack";
 import Image from "next/image";
 import myImg from "@/public/myimg.jpg";
-import Anthill from "@/public/designs/anthill.svg";
+import Anthill from "@/public/designs/anthill.png";
 import newtabicon from "@/public/icons/newtab.svg";
-import unibudget from "@/public/designs/unib1.svg";
+import unibudget from "@/public/designs/unib.png";
 
-import exp1 from "@/app/assets/exp/1.jpg";
-import exp2 from "@/app/assets/exp/2.jpg";
-import exp3 from "@/app/assets/exp/4.jpg";
-import exp4 from "@/app/assets/exp/5.jpg";
+import exp1 from "@/app/assets/exp/1.webp";
+import exp2 from "@/app/assets/exp/2.webp";
+import exp3 from "@/app/assets/exp/4.webp";
+import exp4 from "@/app/assets/exp/5.webp";
 
 
 export default function Home() {
