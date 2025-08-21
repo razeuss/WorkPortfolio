@@ -215,8 +215,8 @@ export default function Home() {
             {/* Column 1 */}  
             <div className="w-[40%] flex flex-col gap-5">
               <SlideUp className="h-[90%] sm:h-full">
-                 <div className="bg-[#2c2c2c] h-full w-full rounded-[20px] overflow-hidden shadow-[0_0px_10px_rgba(0,0,0,0.1)] transition-all duration-500 hover:shadow-[0_12px_10px_rgba(0,0,0,0.3)] hover:-translate-y-3 group">
-                  <Image src={myImg} alt="no img"  className="object-cover transition-all duration-500 group-hover:scale-105"/>
+                 <div className="bg-[#2c2c2c] relative h-full w-full rounded-[20px] overflow-hidden shadow-[0_0px_10px_rgba(0,0,0,0.1)] transition-all duration-500 hover:shadow-[0_12px_10px_rgba(0,0,0,0.3)] hover:-translate-y-3 group">
+                  <Image src={myImg} alt="no img" fill className="object-cover object-center transition-all duration-500 group-hover:scale-105"/>
                 </div>
               </SlideUp>
               <SlideUp className="h-[10%] sm:hidden"> 
@@ -330,24 +330,22 @@ export default function Home() {
             </div>
           </SlideUp>
 
-          <SlideUp>
-            <div className=" gap-5 pt-10 flex justify-end gap-10 w-[70%] hidden sm:flex">
+            <div className=" gap-5 pt-10 w-[70%] hidden sm:flex">
+               <SlideUp className="flex justify-end gap-10">
+                 {canScrollLeft && (
+                  <button onClick={() => scroll("left")} className="bg-[#f0f0f0] text-[#333333] shadow-md rounded-full p-2 z-10 hover:bg-[#555555] hover:text-[#f0f0f0] transition">
+                    <ChevronLeft size={30} />
+                  </button>
+                )}
 
-            {canScrollLeft && (
-              <button onClick={() => scroll("left")} className="bg-[#f0f0f0] text-[#333333] shadow-md rounded-full p-2 z-10 hover:bg-[#555555] hover:text-[#f0f0f0] transition">
-                <ChevronLeft size={30} />
-              </button>
-            )}
-
-            
-            {canScrollRight && (
-              <button onClick={() => scroll("right")} className="bg-[#f0f0f0] text-[#333333] shadow-md rounded-full p-2 z-10 hover:bg-[#555555] hover:text-[#f0f0f0] transition">
-                <ChevronRight size={30} />
-              </button>)}
-
-          </div>
-          </SlideUp>
-
+                
+                {canScrollRight && (
+                  <button onClick={() => scroll("right")} className="bg-[#f0f0f0] text-[#333333] shadow-md rounded-full p-2 z-10 hover:bg-[#555555] hover:text-[#f0f0f0] transition">
+                    <ChevronRight size={30} />
+                  </button>)}
+               </SlideUp>
+            </div>
+        
         </div>
 
 
@@ -463,7 +461,7 @@ export default function Home() {
           
                 <div className="order-1 sm:order-2 flex justify-end py-15">
                   <SlideUp>
-                    <Image src={Anthill} alt="noimg" height={1400}/>
+                    <Image src={Anthill} alt="noimg" width={1200} className="object-center"/>
                   </SlideUp>
                 </div>
               
