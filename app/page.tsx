@@ -15,6 +15,12 @@ import Anthill from "@/public/designs/anthill.svg";
 import newtabicon from "@/public/icons/newtab.svg";
 import unibudget from "@/public/designs/unib1.svg";
 
+import exp1 from "@/public/exp/1.jpg";
+import exp2 from "@/public/exp/2.jpg";
+import exp3 from "@/public/exp/4.jpg";
+import exp4 from "@/public/exp/5.jpg";
+
+
 export default function Home() {
   const scrollRef = useRef<HTMLDivElement>(null);
   const [canScrollLeft, setCanScrollLeft] = useState(false);
@@ -22,28 +28,28 @@ export default function Home() {
 
   const experiences = [
   {
-    img: "/exp/5.jpg",
+    img: exp4,
     date: "September 2023",
     title: "Powered the computer applications",
     subtitle: "department election with our voting system.",
     gradient: "from-black/70 via-black/40 to-transparent"
   },
   {
-    img: "/exp/2.jpg",
+    img: exp2,
     date: "April 2024",
     title: "Invited to showcase our system",
     subtitle: "to computer programming students.",
     gradient: "from-black/60 via-black/50 to-transparent"
   },
   {
-    img: "/exp/4.jpg",
+    img: exp3,
     date: "June 2025",
     title: "Won the first quantum computing",
     subtitle: "and blockchain hackathon.",
     gradient: "from-black/80 via-black/50 to-transparent"
   },
   {
-    img: "/exp/1.jpg",
+    img: exp1,
     date: "July 2025",
     title: "Completed internship at",
     subtitle: "anura innovations.",
