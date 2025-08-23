@@ -30,29 +30,25 @@ export default function Home() {
   {
     img: exp4,
     date: "September 2023",
-    title: "Powered the computer applications",
-    subtitle: "department election with our voting system.",
+    title: "Powered the computer applications department election with our voting system.",
     gradient: "from-black/70 via-black/40 to-transparent"
   },
   {
     img: exp2,
     date: "April 2024",
-    title: "Invited to showcase our system",
-    subtitle: "to computer programming students.",
+    title: "Invited to showcase our system to computer programming students.",
     gradient: "from-black/60 via-black/50 to-transparent"
   },
   {
     img: exp3,
     date: "June 2025",
-    title: "Won the first quantum computing",
-    subtitle: "and blockchain hackathon.",
+    title: "Won the first quantum computing and blockchain hackathon.",
     gradient: "from-black/80 via-black/50 to-transparent"
   },
   {
     img: exp1,
     date: "July 2025",
-    title: "Completed internship at",
-    subtitle: "anura innovations.",
+    title: "Completed internship at anura innovations.",
     gradient: "from-black/70 via-black/10 to-transparent"
   }
 ], []);
@@ -329,10 +325,9 @@ useEffect(() => {
                   <div key={i} className="cell relative flex-shrink-0 w-[80%] min-[1440px]:w-full h-full overflow-hidden rounded-[20px] sm:rounded-[30px] bg-gray-100">
                     <Image src={exp.img} fill alt={`Experience ${i}`} className="w-full h-full object-cover bg-[#f0f0f0]"/>
                     <div className={`absolute inset-0 bg-gradient-to-b ${exp.gradient}`}></div>
-                    <div className="absolute top-4 left-4 sm:top-10 sm:left-10 leading-6 sm:leading-10 flex flex-col text-white text-lg sm:text-3xl font-bold tracking-normal">
+                    <div className="absolute max-w-150 top-4 left-4 sm:top-10 sm:left-10 leading-6 sm:leading-10 flex flex-col text-white text-lg sm:text-3xl font-bold tracking-normal pr-4">
                       <span className="text-sm sm:text-lg font-medium">{exp.date}</span>
                       <span>{exp.title}</span>
-                      <span dangerouslySetInnerHTML={{ __html: exp.subtitle.replace(/\n/g, "<br/>") }} />
                     </div>
                   </div>
                 ))}
