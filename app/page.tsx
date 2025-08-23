@@ -142,7 +142,7 @@ useEffect(() => {
       <main className="flex-grow w-full mx-auto relative overflow-hidden">
         <Header/>
         
-        <section className="w-full flex flex-col min-h-screen">
+        <section className="w-full flex flex-col h-auto">
           <div className=" flex items-center justify-center">
             <div className="absolute z-0 -top-[70px] min-[640px]:-top-[110px] min-[2000px]:-top-[50px] text-[#f8f9fa] font-black text-[150px] min-[640px]:text-[300px] min-[2000px]:text-[400px] leading-60 tracking-tighter z-0 text-center pointer-events-none select-none" style={{ textShadow: "-20px 15px 30px rgba(0,0,0,0.015)" }}>
               ui/uxdesigner
