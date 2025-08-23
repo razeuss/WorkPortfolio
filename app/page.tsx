@@ -138,26 +138,26 @@ useEffect(() => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-[#f8f9fa] flex flex-col relative overflow-x-auto">  
-      <main className="flex-grow w-full mx-auto z-10 relative">
+    <div className="min-h-screen bg-[#f8f9fa] flex flex-col relative">  
+      <main className="flex-grow w-full mx-auto relative overflow-hidden">
         <Header/>
-        <section className="relative w-full h-screen flex flex-col">
-
-          <div className="h-5/9 sm:h-7/9 flex items-center justify-center overflow-hidden relative">
-              <div className="absolute -top-[70px] min-[640px]:-top-[110px] min-[2000px]:-top-[50px] text-[#f8f9fa] font-black text-[150px] min-[640px]:text-[300px] min-[2000px]:text-[400px] leading-60 tracking-tighter z-0 text-center pointer-events-none select-none" style={{ textShadow: "-20px 15px 30px rgba(0,0,0,0.015)" }}>
-                ui/uxdesigner
-              </div>
-              <div className="absolute top-[20px] min-[640px]:top-[70px] min-[2000px]:top-[190px] text-[#f8f9fa] font-black text-[150px] min-[640px]:text-[300px] min-[2000px]:text-[400px] leading-60 tracking-tighter z-2 text-center pointer-events-none select-none" style={{ textShadow: "-20px 15px 30px rgba(0,0,0,0.02)" }}>
-                <span style={{ textShadow: "-20px 15px 30px rgba(0,0,0,0.06)" }}>rsoftware&</span>web<br/>
-              </div>
-              <div className="absolute -top-[130px] min-[640px]:top-[10px] min-[2000px]:top-[190px] text-[#f8f9fa] font-black text-[150px] min-[640px]:text-[300px] min-[2000px]:text-[400px]  leading-60 tracking-tighter z-1 text-center pointer-events-none select-none" style={{ textShadow: "-20px 15px 30px rgba(0,0,0,0.02)" }}>
-                <br/>veloperand<span style={{ textShadow: "-20px 15px 30px rgba(0,0,0,0.05)" }}>webdev</span>eloper
-              </div>
-              <div className="absolute top-[200px] min-[640px]:top-[420px] min-[2000px]:top-[660px] text-[#f8f9fa] font-black text-[150px] min-[640px]:text-[300px] min-[2000px]:text-[400px]  leading-60 tracking-tighter z-0 text-center pointer-events-none select-none" style={{ textShadow: "-20px 15px 30px rgba(0,0,0,0.015)" }}>
-                webflowdesigner
-              </div>
         
-            <div className="z-10 w-[90%] sm:w-[70%]  text-[#333333] font-bold min-[640px]:text-8xl min-[2000px]:text-9xl text-4xl leading-10 min-[640px]:leading-21  min-[2000px]:leading-30 flex flex-col items-center text-center sm:items-start sm:text-start">
+        <section className="w-full flex flex-col min-h-screen">
+          <div className=" flex items-center justify-center">
+            <div className="absolute z-0 -top-[70px] min-[640px]:-top-[110px] min-[2000px]:-top-[50px] text-[#f8f9fa] font-black text-[150px] min-[640px]:text-[300px] min-[2000px]:text-[400px] leading-60 tracking-tighter z-0 text-center pointer-events-none select-none" style={{ textShadow: "-20px 15px 30px rgba(0,0,0,0.015)" }}>
+              ui/uxdesigner
+            </div>
+            <div className="absolute z-2 top-[20px] min-[640px]:top-[70px] min-[2000px]:top-[190px] text-[#f8f9fa] font-black text-[150px] min-[640px]:text-[300px] min-[2000px]:text-[400px] leading-60 tracking-tighter z-2 text-center pointer-events-none select-none" style={{ textShadow: "-20px 15px 30px rgba(0,0,0,0.02)" }}>
+              <span style={{ textShadow: "-20px 15px 30px rgba(0,0,0,0.06)" }}>rsoftware&</span>web<br/>
+            </div>
+            <div className="absolute z-1 -top-[130px] min-[640px]:top-[10px] min-[2000px]:top-[190px] text-[#f8f9fa] font-black text-[150px] min-[640px]:text-[300px] min-[2000px]:text-[400px]  leading-60 tracking-tighter z-1 text-center pointer-events-none select-none" style={{ textShadow: "-20px 15px 30px rgba(0,0,0,0.02)" }}>
+              <br/>veloperand<span style={{ textShadow: "-20px 15px 30px rgba(0,0,0,0.05)" }}>webdev</span>eloper
+            </div>
+            <div className="absolute top-[200px] min-[640px]:top-[420px] min-[2000px]:top-[660px] text-[#f8f9fa] font-black text-[150px] min-[640px]:text-[300px] min-[2000px]:text-[400px]  leading-60 tracking-tighter z-0 text-center pointer-events-none select-none" style={{ textShadow: "-20px 15px 30px rgba(0,0,0,0.015)" }}>
+              webflowdesigner
+            </div>
+            
+            <div className="z-10 py-30 min-[1920px]:py-70 w-[90%] sm:w-[70%] text-[#333333] font-bold min-[640px]:text-8xl min-[2000px]:text-9xl text-4xl leading-10 min-[640px]:leading-21  min-[2000px]:leading-30 flex flex-col items-center text-center sm:items-start sm:text-start">
               <h1 className="tracking-tighter mb-2 xl:mb-5">
                 Software & Web<br />
                 developer
@@ -173,7 +173,7 @@ useEffect(() => {
             </div>
           </div>
 
-          <section className="h-2/5 mx-auto">
+          <section className="h-auto mx-auto z-30">
                 <SlideUp className="h-full "> 
                       <div className="h-full rounded-[20px] flex justify-center flex-col pb-20 sm:pb-30 gap-6">
 
@@ -190,7 +190,7 @@ useEffect(() => {
                            className="h-15 w-15 min-[1920px]:h-20 min-[1920px]:w-20 rounded-[20px] shadow-[-5px_5px_5px_rgba(0,0,0,0.3)] hover:shadow-[-10px_8px_5px_rgba(0,0,0,0.3)] hover:scale-107 transition-all duration-200">
                               <LinkedinIcon className="w-full h-full" />
                           </a>
-                          <a href="mailto:adlaon.joshuaradz@gmail.com?subject=Inquiry from Portfolio" target="_blank" rel="noopener noreferrer" 
+                          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=adlaon.joshuaradz@gmail.com&su=Inquiry%20from%20Portfolio" target="_blank" rel="noopener noreferrer" 
                           className="h-15 w-15  min-[1920px]:h-20  min-[1920px]:w-20 rounded-[20px] shadow-[-5px_5px_5px_rgba(0,0,0,0.3)] hover:shadow-[-10px_8px_5px_rgba(0,0,0,0.3)] hover:scale-107 transition-all duration-200">
                               <GmailIcon className="w-full h-full " />
                           </a>
@@ -366,7 +366,7 @@ useEffect(() => {
 
             <div className="w-[90%] flex flex-col min-[1440px]:flex-row justify-center min-[1440px]:w-[70%]">
               <SlideUp className="flex justify-center min-[1440px]:justify-end">
-                <div className=" w-50 sm:w-100 min-[1920px]:w-150 flex justify-end">
+                <div className=" w-75 min-[1440px]:w-100 min-[1920px]:w-150 flex justify-end">
                     <Image src={unibudget} alt="noimg" className="object-center"/>
                 </div>
               </SlideUp>
@@ -386,7 +386,7 @@ useEffect(() => {
                       </div>
                     </div>
                     
-                    <p className="font-regular text-md sm:text-xl max-w-200 mx-auto min-[1440px]:mx-0 text-center min-[1440px]:text-left">
+                    <p className="font-regular text-md sm:text-xl max-w-150 mx-auto min-[1440px]:mx-0 text-center min-[1440px]:text-left">
                       Designed a mobile application prototype in Figma aimed at helping students
                       manage their finances effectively. The app allows users to track income, 
                       set spending limits, categorize expenses, and visualize their budget through
@@ -432,7 +432,7 @@ useEffect(() => {
                         </div>
                       </div>
                       
-                      <p className="font-regular text-md sm:text-xl max-w-200 min-[1440px]:mx-0 mx-auto">
+                      <p className="font-regular text-md sm:text-xl max-w-150 min-[1440px]:mx-0 mx-auto">
                         Designed and developed a web-based platform made 
                         exclusively for IIT students to connect with employers and find 
                         opportunities such as part-time jobs, one-time projects,
@@ -485,7 +485,7 @@ useEffect(() => {
 
         </div>
 
-        <div className="h-20 w-full flex flex-col justify-center items-center bg-[#f8f9fa]">
+        <div className="h-auto w-full flex flex-col justify-center items-center bg-[#f8f9fa]">
         </div>
       </main>
     </div>

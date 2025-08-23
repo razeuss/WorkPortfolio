@@ -8,7 +8,7 @@ export default function Header() {
           <a href="" rel="noopener noreferrer">
             About
           </a>
-          <a href="mailto:adlaon.joshuaradz@gmail.com?subject=Inquiry from Portfolio" target="_blank" rel="noopener noreferrer">
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=adlaon.joshuaradz@gmail.com&su=Inquiry%20from%20Portfolio" target="_blank" rel="noopener noreferrer">
             Contact
           </a>
 
