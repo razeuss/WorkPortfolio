@@ -3,7 +3,7 @@
 export default function Header() {
   return (
     <header className="bg-white/60 backdrop-blur-lg h-[50px] sticky top-0 z-50 flex justify-center items-center">
-      <div className="w-[90%] sm:w-[70%] text-[#333333] justify-end flex text-sm tracking-normal font-light">
+      <div className="w-[90%] min-[1440px]:w-[70%] text-[#333333] justify-end flex text-sm tracking-normal font-light">
         <div className="flex gap-5">
           <a href="" rel="noopener noreferrer">
             About
