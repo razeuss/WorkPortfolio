@@ -371,7 +371,7 @@ useEffect(() => {
 
             <div className="w-[90%] flex flex-col min-[1440px]:flex-row justify-center min-[1440px]:w-[70%]">
               <SlideUp className="flex justify-center min-[1440px]:justify-end">
-                <div className=" w-100 min-[1920px]:w-150 flex justify-end py-15">
+                <div className=" w-50 sm:w-100 min-[1920px]:w-150 flex justify-end">
                     <Image src={unibudget} alt="noimg" className="object-center"/>
                 </div>
               </SlideUp>
