@@ -222,7 +222,7 @@ useEffect(() => {
             <div className="w-[40%] flex flex-col gap-5">
               <SlideUp className="h-[90%] sm:h-full">
                  <div className="bg-[#2c2c2c] relative h-full w-full rounded-[20px] overflow-hidden shadow-[0_0px_10px_rgba(0,0,0,0.1)] transition-all duration-500 hover:shadow-[0_12px_10px_rgba(0,0,0,0.3)] hover:-translate-y-3 group">
-                  <Image src={myImg} alt="no img" fill className="object-cover object-center transition-all duration-500 group-hover:scale-105"/>
+                  <Image src={myImg} priority alt="no img" fill className="object-cover object-center transition-all duration-500 group-hover:scale-105"/>
                 </div>
               </SlideUp>
               <SlideUp className="h-[10%]  min-[1440px]:hidden"> 
