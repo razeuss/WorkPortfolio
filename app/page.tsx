@@ -226,7 +226,7 @@ useEffect(() => {
                 </div>
               </SlideUp>
               <SlideUp className="h-[10%]  min-[1440px]:hidden"> 
-                  <a href="https://drive.google.com/file/d/180tZIL7UdTybk6CSIsN7HbVbwwlUV5Du/view?usp=sharing" target="_blank" rel="noopener noreferrer" 
+                  <a href="https://drive.google.com/file/d/1vawwfXq25PTIs04DRvSGlKzwS-1-3EPa/view?usp=drive_link" target="_blank" rel="noopener noreferrer" 
                   className="bg-white border-[#333333] border-2 group-hover:border-[#333333] group-hover:bg-[#333333] h-full w-full rounded-[10px] sm:rounded-[20px] shadow-[0_0px_10px_rgba(0,0,0,0.07)] flex 
                   justify-center items-center sm:pb-2 px-10 relative overflow-hidden text-[#333333] group-hover:text-white group-hover:pt-8 transition-all duration-500 ">
                     
@@ -282,7 +282,7 @@ useEffect(() => {
 
               <div className="h-[6%] sm:h-[10%] hover:h-[20%] group transition-all duration-500">
                 <SlideUp className="h-full"> 
-                  <a href="https://drive.google.com/file/d/180tZIL7UdTybk6CSIsN7HbVbwwlUV5Du/view?usp=sharing" target="_blank" rel="noopener noreferrer" 
+                  <a href="https://drive.google.com/file/d/1vawwfXq25PTIs04DRvSGlKzwS-1-3EPa/view?usp=drive_link" target="_blank" rel="noopener noreferrer" 
                   className="bg-white border-[#333333] border-2 group-hover:border-[#333333] group-hover:bg-[#333333] h-full w-full rounded-[10px] sm:rounded-[20px] shadow-[0_0px_10px_rgba(0,0,0,0.07)] flex 
                   justify-center items-center sm:pb-2 px-10 relative overflow-hidden text-[#333333] group-hover:text-white group-hover:pt-8 transition-all duration-500 ">
                     
