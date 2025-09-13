@@ -165,9 +165,9 @@ useEffect(() => {
               <div className="text-xl font-medium tracking-tighter lg:text-2xl lg:p-2">
                 <p className="text-[#333333] mb-6 lg:mb-15">Crafting responsive and accessible interfaces.</p>
                 <div className="inline-flex items-center text-white bg-[#333333] px-3 sm:px-6 py-1 sm:py-2 text-lg lg:text-xl lg:text-2xl font-medium rounded-[30px]">
-                  <span className="absolute w-2 h-2 sm:w-4 sm:h-4 bg-green-500 rounded-full mr-3 animate-ping"></span>
-                  <span className="relative w-2 h-2 sm:w-4 sm:h-4 bg-green-500 rounded-full mr-3"></span>
-                  Available for work
+                  <span className="absolute w-2 h-2 sm:w-4 sm:h-4 bg-yellow-500 rounded-full mr-3 animate-ping"></span>
+                  <span className="relative w-2 h-2 sm:w-4 sm:h-4 bg-yellow-500 rounded-full mr-3"></span>
+                  Currently Busy
                 </div>
               </div>
             </div>
