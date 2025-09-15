@@ -167,7 +167,7 @@ useEffect(() => {
                 <div className="inline-flex items-center text-white bg-[#333333] px-3 sm:px-6 py-1 sm:py-2 text-lg lg:text-xl lg:text-2xl font-medium rounded-[30px]">
                   <span className="absolute w-2 h-2 sm:w-4 sm:h-4 bg-yellow-500 rounded-full mr-3 animate-ping"></span>
                   <span className="relative w-2 h-2 sm:w-4 sm:h-4 bg-yellow-500 rounded-full mr-3"></span>
-                  Currently Busy
+                  Unavailable for work
                 </div>
               </div>
             </div>
