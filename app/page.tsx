@@ -19,6 +19,7 @@ import exp1 from "@/app/assets/exp/1.webp";
 import exp2 from "@/app/assets/exp/2.webp";
 import exp3 from "@/app/assets/exp/4.webp";
 import exp4 from "@/app/assets/exp/5.webp";
+import exp5 from "@/app/assets/exp/6.webp";
 
 
 export default function Home() {
@@ -50,6 +51,12 @@ export default function Home() {
     date: "July 2025",
     title: "Completed internship at anura innovations.",
     gradient: "from-black/70 via-black/10 to-transparent"
+  },
+  {
+    img: exp5,
+    date: "September 2025",
+    title: "Secured 2nd place at the DICT AI.deas Hackathon.",
+    gradient: "from-black/80 via-black/30 to-transparent"
   }
 ], []);
 
