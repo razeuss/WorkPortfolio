@@ -155,26 +155,26 @@ useEffect(() => {
               ui/uxdesigner
             </div>
             <div className="absolute z-2 top-[20px] min-[640px]:top-[70px] min-[2000px]:top-[190px] text-[#f8f9fa] font-black text-[150px] min-[640px]:text-[300px] min-[2000px]:text-[400px] leading-60 tracking-tighter z-2 text-center pointer-events-none select-none" style={{ textShadow: "-20px 15px 30px rgba(0,0,0,0.02)" }}>
-              <span style={{ textShadow: "-20px 15px 30px rgba(0,0,0,0.06)" }}>rsoftware&</span>web<br/>
+              <span style={{ textShadow: "-20px 15px 30px rgba(0,0,0,0.06)" }}>rruxengineer&</span>prod<br/>
             </div>
             <div className="absolute z-1 -top-[130px] min-[640px]:top-[10px] min-[2000px]:top-[190px] text-[#f8f9fa] font-black text-[150px] min-[640px]:text-[300px] min-[2000px]:text-[400px]  leading-60 tracking-tighter z-1 text-center pointer-events-none select-none" style={{ textShadow: "-20px 15px 30px rgba(0,0,0,0.02)" }}>
-              <br/>veloperand<span style={{ textShadow: "-20px 15px 30px rgba(0,0,0,0.05)" }}>webdev</span>eloper
+              <br/>oduct<span style={{ textShadow: "-20px 15px 30px rgba(0,0,0,0.05)" }}>designer</span>
             </div>
             <div className="absolute top-[200px] min-[640px]:top-[420px] min-[2000px]:top-[660px] text-[#f8f9fa] font-black text-[150px] min-[640px]:text-[300px] min-[2000px]:text-[400px]  leading-60 tracking-tighter z-0 text-center pointer-events-none select-none" style={{ textShadow: "-20px 15px 30px rgba(0,0,0,0.015)" }}>
-              webflowdesigner
+              productdesigner
             </div>
             
             <div className="z-10 py-30 min-[1920px]:py-70 w-[90%] sm:w-[70%] text-[#333333] font-bold min-[640px]:text-8xl min-[2000px]:text-9xl text-4xl leading-10 min-[640px]:leading-21  min-[2000px]:leading-30 flex flex-col items-center text-center sm:items-start sm:text-start">
               <h1 className="tracking-tighter mb-2 xl:mb-5">
-                Software & Web<br />
-                developer
+                UX Engineer / Product<br />
+                Designer
               </h1>
               <div className="text-xl font-medium tracking-tighter lg:text-2xl lg:p-2">
-                <p className="text-[#333333] mb-6 lg:mb-15">Crafting responsive and accessible interfaces.</p>
+                <p className="text-[#333333] mb-6 lg:mb-15">Designing and building user-centered interfaces.</p>
                 <div className="inline-flex items-center text-white bg-[#333333] px-3 sm:px-6 py-1 sm:py-2 text-lg lg:text-xl lg:text-2xl font-medium rounded-[30px]">
-                  <span className="absolute w-2 h-2 sm:w-4 sm:h-4 bg-yellow-500 rounded-full mr-3 animate-ping"></span>
-                  <span className="relative w-2 h-2 sm:w-4 sm:h-4 bg-yellow-500 rounded-full mr-3"></span>
-                  Unavailable for work
+                  <span className="absolute w-2 h-2 sm:w-4 sm:h-4 bg-green-500 rounded-full mr-3 animate-ping"></span>
+                  <span className="relative w-2 h-2 sm:w-4 sm:h-4 bg-green-500 rounded-full mr-3"></span>
+                  Available for work
                 </div>
               </div>
             </div>
@@ -272,8 +272,9 @@ useEffect(() => {
               <SlideUp className=" min-[1920px]:h-[30%] h-[65%]">
                 <div className="bg-[#f0f0f0] h-full flex flex-col w-full rounded-[20px] p-3 sm:p-10 gap-4 text-[#333333] justify-between">
                   <h1 className="font-bold text-xl sm:text-4xl tracking-tighter">I&apos;m Radz.</h1>
-                  <p className="text-sm sm:text-xl text-[#333333] tracking-tighter overflow-hidden">A 4th-year Computer Science student at Mindanao State University - Iligan Institute of Technology.
-                    I build mobile and desktop applications, with a strong focus on web development.</p>
+                  <p className="text-sm sm:text-xl text-[#333333] tracking-tighter overflow-hidden"> UX Engineer & Product Designer focused on crafting intuitive experiences,
+                  scalable design systems, and seamless interactions between users and
+                  technology.</p>
                 </div>
               </SlideUp>
             </div>
