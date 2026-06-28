@@ -20,6 +20,7 @@ import exp2 from "@/app/assets/exp/2.webp";
 import exp3 from "@/app/assets/exp/4.webp";
 import exp4 from "@/app/assets/exp/5.webp";
 import exp5 from "@/app/assets/exp/6.webp";
+import exp6 from "@/app/assets/exp/7.webp";
 
 
 export default function Home() {
@@ -56,6 +57,12 @@ export default function Home() {
     img: exp5,
     date: "September 2025",
     title: "Secured 2nd place at the DICT AI.deas Hackathon.",
+    gradient: "from-black/80 via-black/30 to-transparent"
+  },
+  {
+    img: exp6,
+    date: "September 2025 - June 2026",
+    title: "Worked as a Web Designer and Creative Learning Assistant at Kominiti Inc.",
     gradient: "from-black/80 via-black/30 to-transparent"
   }
 ], []);
@@ -263,6 +270,7 @@ useEffect(() => {
                     <h1 className="text-xl sm:text-4xl font-bold text-[#333333] tracking-tighter">Skills</h1>
                     <div className="flex flex-col">
                       <span className="text-sm sm:text-xl text-[#333333] tracking-tighter">Web Development</span>
+                      <span className="text-sm sm:text-xl text-[#333333] tracking-tighter">AI/ML Development</span>
                       <span className="text-sm sm:text-xl text-[#333333] tracking-tighter">Software Development</span>
                       <span className="text-sm sm:text-xl text-[#333333] tracking-tighter">UI/UX Design</span>
                     </div>
