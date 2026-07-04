@@ -172,8 +172,7 @@ useEffect(() => {
             
             <div className="z-10 py-30 min-[1920px]:py-70 w-[90%] sm:w-[70%] text-[#333333] font-bold min-[640px]:text-8xl min-[2000px]:text-9xl text-4xl leading-10 min-[640px]:leading-21  min-[2000px]:leading-30 flex flex-col items-center text-center sm:items-start sm:text-start">
               <h1 className="tracking-tighter mb-2 xl:mb-5">
-                Design Engineer | Product<br />
-                Designer
+                Design Engineer & Product Designer
               </h1>
               <div className="text-xl font-medium tracking-tighter lg:text-2xl lg:p-2">
                 <p className="text-[#333333] mb-6 lg:mb-15">Designing and building user-centered interfaces.</p>
