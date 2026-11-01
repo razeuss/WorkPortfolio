@@ -13,7 +13,7 @@ Deploy: push to GitHub → import in Vercel.
 - `app/globals.css` — design tokens (colors, fonts, animations). Change the look here.
 - `content/` — every piece of copy: `site.ts`, `projects.ts`, `experience.ts`, `stack.ts`, `process.ts`.
 - `components/layout/Section.tsx` — the framed section with rail lines + corner markers.
-- `components/canvas/FlowCanvas.tsx` — the Attio-style node diagram (hero, How I Build, case-study architecture).
+- `components/canvas/FlowCanvas.tsx` — the Attio-style node diagram (case-study architecture).
 - `components/sections/` — one file per homepage section.
 - `app/work/[slug]/page.tsx` — case-study template.
 

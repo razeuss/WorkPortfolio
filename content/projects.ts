@@ -5,7 +5,6 @@ export type Project = {
   tags: string[];
   features: string[];
   links: { live?: string; github?: string };
-  metric?: { label: string; value: string };
   /** Put files in /public/projects/<slug>/ */
   poster?: string;
   video?: string;
@@ -19,7 +18,6 @@ export const projects: Project[] = [1, 2, 3].map((n) => ({
   tags: ["[Next.js]", "[Postgres]", "[Tool]"],
   features: ["[Auth]", "[Feature]"],
   links: { live: "#", github: "#" },
-  metric: { label: "[Metric label]", value: "[00]" },
   url: `project-${n}.app`,
 }));
 

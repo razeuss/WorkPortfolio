@@ -131,16 +131,6 @@ export function Projects() {
           </li>
         ))}
       </ul>
-
-      {/* Key number per project */}
-      <div className="grid grid-cols-1 gap-px border-t border-line bg-line sm:grid-cols-3">
-        {projects.map((p) => (
-          <div key={p.slug} className="bg-bg px-6 py-6 md:px-10">
-            <div className="text-[28px] font-medium tracking-tight">{p.metric?.value}</div>
-            <div className="mt-1 text-[13px] text-muted">{p.metric?.label} · {p.title}</div>
-          </div>
-        ))}
-      </div>
     </Section>
   );
 }
