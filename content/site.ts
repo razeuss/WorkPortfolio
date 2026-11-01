@@ -36,7 +36,7 @@ export const site = {
 };
 
 export const navLinks = [
-  { id: "work", label: "Work" },
+  { id: "work", label: "Projects" },
   { id: "stack", label: "Stack" },
   { id: "experience", label: "Experience" },
   { id: "about", label: "About" },

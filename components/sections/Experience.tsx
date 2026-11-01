@@ -14,7 +14,7 @@ export function Experience() {
   return (
     <Section id="experience" aria-labelledby="experience-title" className="grid lg:grid-cols-[30fr_70fr]">
       <div className="border-b border-line px-6 py-16 md:px-10 lg:border-r lg:border-b-0 lg:py-24">
-        <SectionHeading id="experience-title" pill="Experience" title="[Experience headline.]" muted="[Muted.]" />
+        <SectionHeading id="experience-title" pill="Experience" title="Where I've worked." />
       </div>
 
       <ul className="divide-y divide-line self-center">

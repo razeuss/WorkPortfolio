@@ -62,7 +62,7 @@ function ProjectsContent() {
   return (
     <>
       <div className="border-b border-line px-6 py-16 md:px-10 md:py-24">
-        <SectionHeading id="work-title" pill="Selected work" title="[Section headline.]" muted="[Muted second sentence.]" />
+        <SectionHeading id="work-title" pill="Projects" title="[Section headline.]" muted="[Muted second sentence.]" />
       </div>
 
       {/* Desktop: tabs + preview */}

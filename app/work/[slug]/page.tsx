@@ -43,7 +43,7 @@ export default async function CaseStudy({ params }: { params: Promise<{ slug: st
       {/* Header */}
       <Section className="px-6 pt-12 pb-12 md:px-10 md:pt-20">
         <Link href="/#work" className="inline-flex items-center gap-1 text-[14px] text-muted hover:text-ink">
-          <ArrowLeft className="size-3.5" /> All work
+          <ArrowLeft className="size-3.5" /> All projects
         </Link>
         <div className="mt-10 flex flex-col items-start gap-5">
           <Pill>[Project type]</Pill>
