@@ -10,11 +10,35 @@ import { Section } from "@/components/layout/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { DotGrid } from "@/components/ui/DotGrid";
 import { BrowserFrame } from "@/components/ui/BrowserFrame";
+import { Button } from "@/components/ui/Button";
+import { Pill } from "@/components/ui/Pill";
 
 const DURATION = 7000;
 
-/** Attio "Signals"-style tabs: project list + progress bar left, live preview right. */
+/** Keeps the section blurred and non-interactive until the case studies are ready. */
 export function Projects() {
+  return (
+    <Section id="work" aria-labelledby="work-notice-title">
+      <div className="overflow-hidden">
+        <div inert className="pointer-events-none blur-[6px] select-none">
+          <ProjectsContent />
+        </div>
+      </div>
+      <div className="absolute inset-0 z-10 flex justify-center bg-bg/40 px-4">
+        <div className="sticky top-[30vh] mt-[20vh] h-fit w-full max-w-[420px] rounded-2xl border border-line bg-surface p-6 text-center shadow-sm md:p-8">
+          <Pill>In progress</Pill>
+          <h2 id="work-notice-title" className="mt-4 text-[24px] font-medium tracking-tight">
+            Case studies are on the way.
+          </h2>
+          <Button href="#contact" variant="solid" className="mt-5">Get in touch</Button>
+        </div>
+      </div>
+    </Section>
+  );
+}
+
+/** Attio "Signals"-style tabs: project list + progress bar left, live preview right. */
+function ProjectsContent() {
   const [active, setActive] = useState(0);
   const [paused, setPaused] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
@@ -36,7 +60,7 @@ export function Projects() {
   const current = projects[active];
 
   return (
-    <Section id="work" aria-labelledby="work-title">
+    <>
       <div className="border-b border-line px-6 py-16 md:px-10 md:py-24">
         <SectionHeading id="work-title" pill="Selected work" title="[Section headline.]" muted="[Muted second sentence.]" />
       </div>
@@ -131,7 +155,7 @@ export function Projects() {
           </li>
         ))}
       </ul>
-    </Section>
+    </>
   );
 }
 

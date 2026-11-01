@@ -5,7 +5,7 @@ export const site = {
   initials: "JR",
   role: "Software Engineer",
   email: "[you@email.com]",
-  location: "[City, PH]",
+  location: "Oroquieta City, Philippines",
   timezone: "Asia/Manila",
   status: "Open to software engineering roles",
   resumeUrl: "/resume.pdf",
@@ -17,11 +17,18 @@ export const site = {
     headline: "Joshua Radz.",
     headlineMuted: "Software Engineer.",
     subline: "[One or two lines about your stack and your edge.]",
-    meta: ["[Location]", "[GMT+8]", "[Stack 1]", "[Stack 2]", "[Stack 3]"],
+    meta: ["Oroquieta City, Philippines","[GMT+8]", "[Stack 1]", "[Stack 2]", "[Stack 3]"],
   },
   about: {
-    text: "[Three to four sentences: who you are, why you moved from design into software engineering,",
-    textMuted: "what you care about building, and the role you are looking for.]",
+    headline: "I build software people can actually use.",
+    intro: "I'm a software engineer and a computer science graduate of MSU-IIT who loves the space where design meets engineering. My favorite work is building interfaces that look good, feel right, and hold up just as well behind the scenes.",
+    current: {
+      lead: "Currently, I'm a UI/UX designer at",
+      company: "Kominiti",
+      url: "https://kominiti.com",
+      rest: "So far, I've focused mainly on design and frontend roles because I wanted to put my eye for visuals to use. That background shapes how I build: I notice the small details, and I care as much about how a product feels as how it works.",
+    },
+    textMuted: "I'm also really easy to work with. I ask questions early, take feedback well, and speak up when I'm stuck. If your team needs someone who cares about the work and is easy to have around, I'd love to talk.",
   },
 };
 
