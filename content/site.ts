@@ -1,26 +1,26 @@
 // All copy lives in /content. Replace every [placeholder] with your real content.
 
 export const site = {
-  name: "[Your Name]",
-  initials: "YN",
-  role: "[Full-stack developer]",
+  name: "Joshua Radz",
+  initials: "JR",
+  role: "Software Engineer",
   email: "[you@email.com]",
   location: "[City, PH]",
   timezone: "Asia/Manila",
-  status: "[Open to full-stack roles]",
+  status: "Open to software engineering roles",
   resumeUrl: "/resume.pdf",
   socials: {
     github: "https://github.com/[username]",
     linkedin: "https://linkedin.com/in/[username]",
   },
   hero: {
-    headline: "[Headline sentence one.]",
-    headlineMuted: "[Muted sentence two.]",
+    headline: "Joshua Radz.",
+    headlineMuted: "Software Engineer.",
     subline: "[One or two lines about your stack and your edge.]",
     meta: ["[Location]", "[GMT+8]", "[Stack 1]", "[Stack 2]", "[Stack 3]"],
   },
   about: {
-    text: "[Three to four sentences: who you are, why you moved from design into full stack,",
+    text: "[Three to four sentences: who you are, why you moved from design into software engineering,",
     textMuted: "what you care about building, and the role you are looking for.]",
   },
 };

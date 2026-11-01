@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { site } from "@/content/site";
 import { Section } from "@/components/layout/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
@@ -14,10 +15,15 @@ export function About() {
         </p>
       </div>
       <DotGrid className="order-1 flex flex-col items-center justify-center gap-3 border-b border-line px-6 py-12 md:order-2 md:border-b-0">
-        {/* Replace with next/image of your photo */}
-        <div className="grid size-40 place-items-center rounded-2xl border border-line bg-surface text-[13px] text-faint saturate-50 transition duration-300 hover:saturate-100 md:size-64">
-          [Photo]
-        </div>
+        <Image
+          src="/about.jpg"
+          alt={`Portrait of ${site.name} working at a laptop`}
+          width={1632}
+          height={2040}
+          quality={90}
+          sizes="(min-width: 768px) 256px, 160px"
+          className="h-auto w-40 rounded-2xl border border-line bg-surface saturate-50 transition duration-300 hover:saturate-100 md:w-64"
+        />
         <p className="font-mono text-[12px] text-faint">
           {site.location} · local time <LocalTime />
         </p>

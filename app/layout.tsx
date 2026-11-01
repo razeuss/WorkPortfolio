@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "sw
 const geistMono = Geist_Mono({ subsets: ["latin"], variable: "--font-geist-mono", display: "swap" });
 
 export const metadata: Metadata = {
-  title: { default: `${site.name} — ${site.role}`, template: `%s · ${site.name}` },
+  title: { default: site.name, template: `%s · ${site.name}` },
   description: site.hero.subline,
 };
 
