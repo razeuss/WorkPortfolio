@@ -9,11 +9,13 @@ type Props = {
   external?: boolean;
   className?: string;
   children: React.ReactNode;
+  "data-inspect"?: string;
 };
 
-export function Button({ href, variant = "outline", arrow = true, external, className, children }: Props) {
+export function Button({ href, variant = "outline", arrow = true, external, className, children, ...rest }: Props) {
   return (
     <Link
+      {...rest}
       href={href}
       {...(external ? { target: "_blank", rel: "noreferrer" } : {})}
       className={cn(

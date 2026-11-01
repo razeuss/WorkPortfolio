@@ -23,7 +23,7 @@ export function Contact() {
     <Section id="contact" aria-labelledby="contact-title" className="relative overflow-hidden px-4 py-20 md:py-32">
       <div aria-hidden className="bg-dashed-grid pointer-events-none absolute inset-0" />
       <div className="relative flex flex-col items-center gap-8 text-center">
-        <SectionHeading id="contact-title" align="center" pill="Contact" title="[Contact headline.]" muted="[Muted.]" />
+        <SectionHeading id="contact-title" align="center" pill="Contact" title={site.contact.headline} />
         <button
           onClick={copy}
           className="inline-flex h-12 w-full max-w-sm items-center justify-center gap-2 rounded-xl border border-line-strong bg-surface px-5 text-[15px] font-medium transition-colors hover:bg-hover sm:w-auto"

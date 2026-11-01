@@ -4,24 +4,24 @@ export const site = {
   name: "Joshua Radz",
   initials: "JR",
   role: "Software Engineer",
-  email: "[you@email.com]",
+  email: "adlaon.joshuaradz@gmail.com",
   location: "Oroquieta City, Philippines",
   timezone: "Asia/Manila",
-  status: "Open to software engineering roles",
+  status: "Available for work",
   resumeUrl: "/resume.pdf",
   socials: {
-    github: "https://github.com/[username]",
+    github: "https://github.com/razeuss",
     linkedin: "https://linkedin.com/in/[username]",
   },
   hero: {
     headline: "Joshua Radz.",
     headlineMuted: "Software Engineer.",
-    subline: "[One or two lines about your stack and your edge.]",
-    meta: ["Oroquieta City, Philippines","[GMT+8]", "[Stack 1]", "[Stack 2]", "[Stack 3]"],
+    subline: "I'm a frontend-focused software engineer with a background in UI/UX design, building polished web interfaces with React, Next.js, and TypeScript.",
+    meta: ["Oroquieta City, Philippines", "GMT+8", "React", "Next.js", "TypeScript"],
   },
   about: {
     headline: "I build software people can actually use.",
-    intro: "I'm a software engineer and a computer science graduate of MSU-IIT who loves the space where design meets engineering. My favorite work is building interfaces that look good, feel right, and hold up just as well behind the scenes.",
+    intro: "I'm a computer science graduate of MSU-IIT who loves the space where design meets engineering. My favorite work is building interfaces that look good, feel right, and hold up just as well behind the scenes.",
     current: {
       lead: "Currently, I'm a UI/UX designer at",
       company: "Kominiti",
@@ -29,6 +29,9 @@ export const site = {
       rest: "So far, I've focused mainly on design and frontend roles because I wanted to put my eye for visuals to use. That background shapes how I build: I notice the small details, and I care as much about how a product feels as how it works.",
     },
     textMuted: "I'm also really easy to work with. I ask questions early, take feedback well, and speak up when I'm stuck. If your team needs someone who cares about the work and is easy to have around, I'd love to talk.",
+  },
+  contact: {
+    headline: "Let's build something together.",
   },
 };
 
@@ -41,8 +44,8 @@ export const navLinks = [
 
 /** The 4-cell row under the hero. icon = lucide-react icon name. */
 export const capabilities = [
-  { icon: "LayoutTemplate", title: "[Frontend]", text: "[Two short lines describing this strength.]" },
-  { icon: "Server", title: "[Backend & API]", text: "[Two short lines describing this strength.]" },
-  { icon: "Database", title: "[Data]", text: "[Two short lines describing this strength.]" },
-  { icon: "Rocket", title: "[Shipping]", text: "[Two short lines describing this strength.]" },
+  { icon: "LayoutTemplate", title: "Frontend", text: "Responsive interfaces with React, Next.js, and TypeScript." },
+  { icon: "PenTool", title: "UI/UX Design", text: "Designing in Figma, from early ideas to polished screens." },
+  { icon: "Server", title: "Backend & Data", text: "APIs with Express.js and Flask, backed by MySQL." },
+  { icon: "Rocket", title: "Shipping", text: "Version control with Git and deployment on Vercel." },
 ] as const;

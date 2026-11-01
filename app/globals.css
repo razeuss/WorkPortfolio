@@ -84,6 +84,13 @@
   .mask-fade-x {
     mask-image: linear-gradient(to right, transparent, black 12%, black 88%, transparent);
   }
+  /* Hides the scrollbar; the element still scrolls */
+  .scrollbar-none {
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {

@@ -17,7 +17,7 @@ export function Stack() {
     <Section id="stack" aria-labelledby="stack-title" className="overflow-hidden px-4 py-16 md:px-10 md:py-24">
       <SectionHeading id="stack-title" align="center" pill="Stack" title="The tools I build with." muted="From the interface to the database." />
 
-      <div role="group" aria-label="Filter stack" className="mask-fade-x mx-auto mt-10 flex max-w-full gap-1.5 overflow-x-auto px-6 sm:justify-center">
+      <div role="group" aria-label="Filter stack" className="mask-fade-x scrollbar-none mx-auto mt-10 flex max-w-full gap-1.5 overflow-x-auto px-6 sm:justify-center">
         {(["All", ...stackGroups] as const).map((g) => (
           <button
             key={g}
@@ -39,7 +39,7 @@ export function Stack() {
             {/* Two copies for a seamless loop; pauses on hover */}
             <div className="flex w-max animate-marquee gap-4 pr-4 group-hover:[animation-play-state:paused] motion-reduce:animate-none">
               {[...stack, ...stack].map((s, i) => (
-                <Tile key={i} name={s.name} icon={s.icon} color={s.color} hidden={i >= stack.length} />
+                <Tile key={i} name={s.name} icon={s.icon} color={s.color} scale={s.scale} hidden={i >= stack.length} />
               ))}
             </div>
           </div>
@@ -48,7 +48,7 @@ export function Stack() {
             <AnimatePresence mode="popLayout">
               {items.map((s, i) => (
                 <motion.li key={`${s.group}-${i}`} layout initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0, scale: 0.9 }}>
-                  <Tile name={s.name} icon={s.icon} color={s.color} />
+                  <Tile name={s.name} icon={s.icon} color={s.color} scale={s.scale} />
                 </motion.li>
               ))}
             </AnimatePresence>
@@ -59,11 +59,11 @@ export function Stack() {
   );
 }
 
-function Tile({ name, icon: Icon, color, hidden }: { name: string; icon: IconType; color: string; hidden?: boolean }) {
+function Tile({ name, icon: Icon, color, scale = 1, hidden }: { name: string; icon: IconType; color: string; scale?: number; hidden?: boolean }) {
   return (
     <div aria-hidden={hidden} className="group/tile relative">
       <div className="grid size-16 place-items-center rounded-2xl border border-line bg-surface md:size-[72px]">
-        <Icon aria-hidden className="size-8 md:size-9" style={{ color }} />
+        <Icon aria-hidden className="size-6 md:size-7" style={{ color, transform: `scale(${scale})` }} />
       </div>
       <span className="pointer-events-none absolute -top-8 left-1/2 -translate-x-1/2 rounded bg-ink px-1.5 py-0.5 text-[11px] whitespace-nowrap text-white opacity-0 transition-opacity group-hover/tile:opacity-100">
         {name}

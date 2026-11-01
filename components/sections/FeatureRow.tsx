@@ -1,8 +1,8 @@
-import { Database, LayoutTemplate, Rocket, Server } from "lucide-react";
+import { LayoutTemplate, PenTool, Rocket, Server } from "lucide-react";
 import { capabilities } from "@/content/site";
 import { Section } from "@/components/layout/Section";
 
-const icons = { LayoutTemplate, Server, Database, Rocket };
+const icons = { LayoutTemplate, PenTool, Server, Rocket };
 
 /** Attio-style row of bordered cells: icon, bold title, muted 2-line text. */
 export function FeatureRow() {

@@ -27,19 +27,28 @@ export function About() {
           <p className="text-muted">{site.about.textMuted}</p>
         </div>
       </div>
-      <DotGrid className="order-1 flex flex-col items-center justify-center gap-3 border-b border-line px-6 py-12 md:order-2 md:border-b-0">
-        <Image
-          src="/about.jpg"
-          alt={`Portrait of ${site.name} working at a laptop`}
-          width={1632}
-          height={2040}
-          quality={90}
-          sizes="(min-width: 768px) 256px, 160px"
-          className="h-auto w-40 rounded-2xl border border-line bg-surface saturate-50 transition duration-300 hover:saturate-100 md:w-64"
-        />
-        <p className="font-mono text-[12px] text-faint">
-          {site.location} · local time <LocalTime />
-        </p>
+      <DotGrid className="order-1 flex flex-col items-center justify-center border-b border-line px-6 py-12 md:order-2 md:border-b-0">
+        <div className="flex w-full max-w-[280px] flex-col gap-3 md:max-w-[360px]">
+          <Image
+            src="/about.jpg"
+            alt={`Portrait of ${site.name} working at a laptop`}
+            width={1632}
+            height={2040}
+            quality={90}
+            sizes="(min-width: 768px) 360px, 280px"
+            className="h-auto w-full rounded-2xl border border-line bg-surface saturate-50 transition duration-300 hover:saturate-100"
+          />
+          <dl className="divide-y divide-line rounded-2xl border border-line bg-surface px-4 text-[13px]">
+            <div className="flex justify-between gap-4 py-2.5">
+              <dt className="shrink-0 text-muted">Based in</dt>
+              <dd className="text-right">{site.location}</dd>
+            </div>
+            <div className="flex justify-between gap-4 py-2.5">
+              <dt className="shrink-0 text-muted">Local time</dt>
+              <dd className="text-right"><LocalTime /> (GMT+8)</dd>
+            </div>
+          </dl>
+        </div>
       </DotGrid>
     </Section>
   );
