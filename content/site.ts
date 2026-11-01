@@ -17,7 +17,7 @@ export const site = {
     headline: "Joshua Radz.",
     headlineMuted: "Software Engineer.",
     subline: "I'm a frontend-focused software engineer with a background in UI/UX design, building polished web interfaces with React, Next.js, and TypeScript.",
-    meta: ["Oroquieta City, Philippines", "GMT+8", "React", "Next.js", "TypeScript"],
+    meta: ["Oroquieta City, Philippines", "GMT+8"],
   },
   about: {
     headline: "I build software people can actually use.",
@@ -44,8 +44,8 @@ export const navLinks = [
 
 /** The 4-cell row under the hero. icon = lucide-react icon name. */
 export const capabilities = [
-  { icon: "LayoutTemplate", title: "Frontend", text: "Responsive interfaces with React, Next.js, and TypeScript." },
+  { icon: "LayoutTemplate", title: "Frontend & Mobile", text: "React, Next.js, and Tailwind CSS on the web, Flutter on mobile." },
   { icon: "PenTool", title: "UI/UX Design", text: "Designing in Figma, from early ideas to polished screens." },
-  { icon: "Server", title: "Backend & Data", text: "APIs with Express.js and Flask, backed by MySQL." },
-  { icon: "Rocket", title: "Shipping", text: "Version control with Git and deployment on Vercel." },
+  { icon: "Server", title: "Backend & Data", text: "Flask and Express.js APIs on MySQL, PostgreSQL, MongoDB, and Firebase." },
+  { icon: "Rocket", title: "Shipping", text: "Git, GitHub, and Bitbucket for version control, deployed on Vercel." },
 ] as const;

@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { motion } from "motion/react";
 import { cn } from "@/lib/utils";
 import { navLinks, site } from "@/content/site";
 import { useActiveSection } from "@/lib/useActiveSection";
@@ -30,10 +29,12 @@ export function Navbar() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  // Blur is lg-only: backdrop-filter would make the header the containing block
+  // for MobileMenu's fixed panel, collapsing it to the header's height.
   return (
     <header
       className={cn(
-        "fixed inset-x-0 top-0 z-50 border-b bg-bg/80 backdrop-blur-md transition-[transform,border-color] duration-200",
+        "fixed inset-x-0 top-0 z-50 border-b bg-bg transition-[transform,border-color] duration-200 lg:bg-bg/80 lg:backdrop-blur-md",
         scrolled ? "border-line" : "border-transparent",
         hidden && "-translate-y-full",
       )}
@@ -48,7 +49,7 @@ export function Navbar() {
 
         <ul className="hidden items-center gap-1 lg:flex">
           {navLinks.map((link) => (
-            <li key={link.id} className="relative">
+            <li key={link.id}>
               <a
                 href={`/#${link.id}`}
                 className={cn(
@@ -58,9 +59,6 @@ export function Navbar() {
               >
                 {link.label}
               </a>
-              {active === link.id && (
-                <motion.span layoutId="nav-underline" className="absolute inset-x-3 -bottom-px h-px bg-ink" />
-              )}
             </li>
           ))}
         </ul>

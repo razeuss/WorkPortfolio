@@ -24,6 +24,8 @@ import {
   SiTypescript,
   SiVercel,
 } from "react-icons/si";
+import { FaJava } from "react-icons/fa";
+import { TbBrandCSharp } from "react-icons/tb";
 import { VscVscode } from "react-icons/vsc";
 
 export type StackGroup = "Languages" | "Frontend" | "Mobile" | "Backend" | "Database" | "DevOps & Tools" | "Design";
@@ -40,6 +42,8 @@ export const stack: { name: string; group: StackGroup; icon: IconType; color: st
   { name: "Python", group: "Languages", icon: SiPython, color: "#3776AB" },
   { name: "C", group: "Languages", icon: SiC, color: "#A8B9CC" },
   { name: "C++", group: "Languages", icon: SiCplusplus, color: "#00599C" },
+  { name: "Java", group: "Languages", icon: FaJava, color: "#007396" },
+  { name: "C#", group: "Languages", icon: TbBrandCSharp, color: "#512BD4" },
   { name: "React", group: "Frontend", icon: SiReact, color: "#61DAFB", scale: 1.12 },
   { name: "Next.js", group: "Frontend", icon: SiNextdotjs, color: "#000000" },
   { name: "HTML", group: "Frontend", icon: SiHtml5, color: "#E34F26" },
