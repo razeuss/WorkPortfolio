@@ -17,7 +17,7 @@ export const site = {
   hero: {
     headline: "Joshua Radz.",
     headlineMuted: "Software Engineer.",
-    subline: "I'm a frontend-focused software engineer with a background in UI/UX design, building polished web interfaces with React, Next.js, and TypeScript.",
+    subline: "I design and build web interfaces that look good and work well, with a background in UI/UX and a focus on the frontend.",
     meta: ["Oroquieta City, Philippines", "GMT+8"],
   },
   about: {
@@ -45,8 +45,8 @@ export const navLinks = [
 
 /** The 4-cell row under the hero. icon = lucide-react icon name. */
 export const capabilities = [
-  { icon: "LayoutTemplate", title: "Frontend & Mobile", text: "React, Next.js, and Tailwind CSS on the web, Flutter on mobile." },
-  { icon: "PenTool", title: "UI/UX Design", text: "Designing in Figma, from early ideas to polished screens." },
-  { icon: "Server", title: "Backend & Data", text: "Flask and Express.js APIs on MySQL, PostgreSQL, MongoDB, and Firebase." },
-  { icon: "Rocket", title: "Shipping", text: "Git, GitHub, and Bitbucket for version control, deployed on Vercel." },
+  { icon: "LayoutTemplate", title: "Frontend & Mobile", text: "Turning designs into fast, responsive interfaces on web and mobile." },
+  { icon: "PenTool", title: "UI/UX Design", text: "Taking ideas from rough wireframes to polished, tested screens in Figma." },
+  { icon: "Server", title: "Backend & Data", text: "Building the APIs and databases behind the interface." },
+  { icon: "Code", title: "Design to Code", text: "Closing the gap between design and engineering, so what ships matches the mockup." },
 ] as const;

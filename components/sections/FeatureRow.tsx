@@ -1,8 +1,8 @@
-import { LayoutTemplate, PenTool, Rocket, Server } from "lucide-react";
+import { Code, LayoutTemplate, PenTool, Server } from "lucide-react";
 import { capabilities } from "@/content/site";
 import { Section } from "@/components/layout/Section";
 
-const icons = { LayoutTemplate, PenTool, Server, Rocket };
+const icons = { LayoutTemplate, PenTool, Server, Code };
 
 /** Attio-style row of bordered cells: icon, bold title, muted 2-line text. */
 export function FeatureRow() {
@@ -16,7 +16,7 @@ export function FeatureRow() {
               <Icon className="size-5 text-muted" strokeWidth={1.5} />
               <div>
                 <h3 className="text-[15px] font-medium">{c.title}</h3>
-                <p className="mt-1 max-w-[26ch] text-[14px] leading-relaxed text-muted">{c.text}</p>
+                <p className="mt-1 max-w-[26ch] text-[14px] leading-relaxed text-pretty text-muted">{c.text}</p>
               </div>
             </div>
           );

@@ -1,7 +1,17 @@
-export const experience = [
+type Job = {
+  role: string;
+  company: string;
+  /** Optional company website, shown as a link when the job is open. */
+  url?: string;
+  period: string;
+  bullets: string[];
+};
+
+export const experience: Job[] = [
   {
     role: "UI/UX Designer",
     company: "Kominiti",
+    url: "https://kominiti.com",
     period: "Sep 2025 — Present",
     bullets: [
       "Built the homepage of the Kominiti website.",
@@ -11,7 +21,8 @@ export const experience = [
   {
     role: "UI/UX Designer",
     company: "Resume Rubix",
-    period: "Jun — Sep 2026",
+    url: "https://resumerubix.com",
+    period: "Jul — Sep 2026",
     bullets: ["Designed the Resume Rubix website."],
   },
   {
