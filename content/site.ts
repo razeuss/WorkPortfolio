@@ -9,9 +9,10 @@ export const site = {
   timezone: "Asia/Manila",
   status: "Available for work",
   resumeUrl: "/resume.pdf",
+  resumeUpdated: "July 2025",
   socials: {
     github: "https://github.com/razeuss",
-    linkedin: "https://linkedin.com/in/[username]",
+    linkedin: "https://linkedin.com/in/joshuaradzadlaon",
   },
   hero: {
     headline: "Joshua Radz.",

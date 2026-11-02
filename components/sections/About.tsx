@@ -28,14 +28,15 @@ export function About() {
         </div>
       </div>
       <DotGrid className="order-1 flex items-center justify-center overflow-hidden border-b border-line px-6 py-14 md:order-2 md:border-b-0">
-        <InspectFrame name="Portrait" className="w-full max-w-[300px] md:max-w-[380px]">
+        <InspectFrame name="Portrait" className="w-full max-w-[300px] select-none md:max-w-[380px] [-webkit-touch-callout:none]">
           <Image
             src="/about-dither.png"
             alt={`Dot-pattern portrait of ${site.name} working at a laptop`}
             width={1320}
             height={1458}
             unoptimized
-            className="block h-auto w-full"
+            draggable={false}
+            className="pointer-events-none block h-auto w-full select-none [-webkit-touch-callout:none]"
           />
         </InspectFrame>
       </DotGrid>

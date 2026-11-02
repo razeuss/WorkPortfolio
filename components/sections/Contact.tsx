@@ -36,6 +36,7 @@ export function Contact() {
           <a href={site.socials.linkedin} target="_blank" rel="noreferrer" className="hover:text-ink hover:underline">LinkedIn</a>
           <a href={site.resumeUrl} target="_blank" rel="noreferrer" className="hover:text-ink hover:underline">Résumé</a>
         </div>
+        <p className="font-mono text-[12px] text-faint">Résumé updated {site.resumeUpdated}</p>
       </div>
     </Section>
   );

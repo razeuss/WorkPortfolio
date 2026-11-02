@@ -46,6 +46,7 @@ export function MobileMenu() {
               ))}
             </ul>
             <div className="flex flex-col gap-2">
+              <p className="text-center font-mono text-[12px] text-faint">Résumé updated {site.resumeUpdated}</p>
               <Button href={site.resumeUrl} external className="h-11 w-full">Résumé</Button>
               <Button href="/#contact" variant="solid" className="h-11 w-full">Contact me</Button>
             </div>

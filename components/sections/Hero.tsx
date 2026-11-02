@@ -23,9 +23,10 @@ export function Hero() {
           <Reveal onMount delay={0.24}>
             <p data-inspect="Body" className="max-w-[480px] text-[16px] leading-relaxed text-muted md:text-[17px]">{site.hero.subline}</p>
           </Reveal>
-          <Reveal onMount delay={0.3} className="flex w-full flex-col gap-2 sm:w-auto sm:flex-row">
+          <Reveal onMount delay={0.3} className="flex w-full flex-col gap-2 sm:w-auto sm:flex-row sm:items-center">
             <Button href="#work" variant="solid" data-inspect="Button / Solid" className="h-11 sm:h-9">View projects</Button>
             <Button href={site.resumeUrl} external data-inspect="Button / Outline" className="h-11 sm:h-9">Résumé</Button>
+            <span data-inspect="Caption" className="font-mono text-[12px] text-faint sm:ml-1">Résumé updated {site.resumeUpdated}</span>
           </Reveal>
         </div>
         <ul data-inspect="Meta" className="relative flex flex-wrap gap-x-3 gap-y-1 border-t border-line pt-4 font-mono text-[12px] text-faint">
