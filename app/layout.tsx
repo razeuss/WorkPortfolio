@@ -9,8 +9,18 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "sw
 const geistMono = Geist_Mono({ subsets: ["latin"], variable: "--font-geist-mono", display: "swap" });
 
 export const metadata: Metadata = {
-  title: { default: site.name, template: `%s · ${site.name}` },
+  // Domain only: the GitHub Pages build adds /WorkPortfolio to image links itself.
+  metadataBase: new URL(new URL(site.url).origin),
+  title: { default: `${site.name} · ${site.role}`, template: `%s · ${site.name}` },
   description: site.hero.subline,
+  openGraph: {
+    type: "website",
+    url: site.url,
+    siteName: site.name,
+    title: `${site.name} · ${site.role}`,
+    description: site.hero.subline,
+  },
+  twitter: { card: "summary_large_image" },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

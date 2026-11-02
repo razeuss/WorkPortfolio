@@ -4,6 +4,8 @@ export const site = {
   name: "Joshua Radz",
   initials: "JR",
   role: "Software Engineer",
+  /** Where the site is published. Link previews need full URLs, so update this if the address changes. */
+  url: "https://razeuss.github.io/WorkPortfolio",
   email: "adlaon.joshuaradz@gmail.com",
   location: "Oroquieta City, Philippines",
   timezone: "Asia/Manila",

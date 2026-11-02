@@ -61,11 +61,14 @@ export function Stack() {
 
 function Tile({ name, icon: Icon, color, scale = 1, hidden }: { name: string; icon: IconType; color: string; scale?: number; hidden?: boolean }) {
   return (
-    <div aria-hidden={hidden} className="group/tile relative">
+    <div aria-hidden={hidden} className="group/tile relative flex flex-col items-center gap-2">
       <div className="grid size-16 place-items-center rounded-2xl border border-line bg-surface md:size-[72px]">
         <Icon aria-hidden className="size-6 md:size-7" style={{ color, transform: `scale(${scale})` }} />
       </div>
-      <span className="pointer-events-none absolute -top-8 left-1/2 -translate-x-1/2 rounded bg-ink px-1.5 py-0.5 text-[11px] whitespace-nowrap text-white opacity-0 transition-opacity group-hover/tile:opacity-100">
+      {/* Touch screens can't hover, so they always show the name under the logo. Elsewhere it is read by screen readers. */}
+      <span className="sr-only text-[12px] whitespace-nowrap text-muted [@media(hover:none)]:not-sr-only">{name}</span>
+      {/* Mouse users get the tooltip */}
+      <span aria-hidden className="pointer-events-none absolute -top-8 left-1/2 -translate-x-1/2 rounded bg-ink px-1.5 py-0.5 text-[11px] whitespace-nowrap text-white opacity-0 transition-opacity group-hover/tile:opacity-100">
         {name}
       </span>
     </div>
